@@ -1,0 +1,43 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="proses.php" method="POST">
+        <input type="text" placeholder="user name">
+        <br>
+        <input type="password" placeholder="password">
+        <br>
+        <input type="email" placeholder="email">
+        <br>
+        <input type="date">
+        <br>
+        <select name="" id="">
+            <option value="mail"></option>
+            <option value="femail"></option>
+            <br>
+            <input type="submit" value="sing">
+            <br>
+            <input type="button" value="sing">
+            <br>
+            <input type="color">
+            <br>
+            <input type="time">
+            
+
+
+        </select>
+
+        
+
+    </form>
+    
+    
+</body>
+</html>
