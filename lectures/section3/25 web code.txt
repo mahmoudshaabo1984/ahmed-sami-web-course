@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="myclass">hello world</h1>
+
+    <h1 id="myid">welcome to my website</h1>
+
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+h1 {
+  /* لماذا هذه الأرقام؟ 
+     Red: 177  -> أحمر متوسط (ليس فاقعاً)
+     Green: 133 -> خلطنا معه قليلاً من الأخضر
+     Blue: 133  -> خلطنا معه قليلاً من الأزرق
+     Alpha: 0.8 -> شفافية بنسبة بسيطة (ليس شفافاً تماماً)
+     
+     النتيجة: لون "وردي غامق" أو "خشبي" مريح للعين
+  */
+  color: rgba(177, 133, 133, 0.8);
+}
