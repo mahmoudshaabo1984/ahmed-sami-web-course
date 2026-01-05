@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Font Size Lesson</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="myclass">hello world</h1>
+
+    <h1 id="myid">welcome to my website</h1>
+
+    <p class="paragraph-text">Lorem ipsum dolor sit amet.</p>
+    <p class="paragraph-text">Lorem ipsum dolor sit amet.</p>
+  </body>
+</html>
+
+
+
+
+/* تكبير العنوان الأول */
+.myclass {
+  color: #ff0000; /* أحمر (من الدرس السابق) */
+
+  /* هنا الدرس الجديد: حجم خط كبير جداً */
+  font-size: 50px;
+}
+
+/* تنسيق العنوان الثاني */
+#myid {
+  color: #0000ff; /* أزرق */
+
+  /* حجم خط أصغر قليلاً من الأول */
+  font-size: 30px;
+}
+
+/* تنسيق الفقرات (لجعل القراءة أسهل) */
+.paragraph-text {
+  /* الحجم الافتراضي في المتصفح هو 16px، نحن سنكبره لـ 20 */
+  font-size: 20px;
+
+  /* لون رمادي غامق مريح للعين (ذوق الأستاذ) */
+  color: #333;
+}
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hex Colors Lesson</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="myclass">hello world</h1>
+
+    <h1 id="myid">welcome to my website</h1>
+
+    <p class="p1">تجربة اللون الأزرق (Hex).</p>
+    <p class="p2">تجربة اللون الأسود (Hex).</p>
+  </body>
+</html>
+
+
+
+
+
+/* 1. العنوان الأول */
+.myclass {
+  color: #ff0000; /* لون أحمر (Hex) */
+  
+  /* الإضافة الجديدة: تكبير الخط */
+  font-size: 50px;
+}
+
+/* 2. العنوان الثاني */
+#myid {
+  color: #0f0; /* لون أخضر (Hex مختصر) */
+  
+  /* الإضافة الجديدة: حجم أصغر قليلاً */
+  font-size: 30px;
+}
+
+/* 3. الفقرة الأولى */
+.p1 {
+  color: #0000ff; /* لون أزرق */
+  font-weight: bold;
+  
+  /* تعديل الحجم */
+  font-size: 25px;
+}
+
+/* 4. الفقرة الثانية */
+.p2 {
+  color: #000; /* لون أسود */
+  
+  /* تعديل الحجم */
+  font-size: 20px;
+}
