@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Formatting Lesson</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="myclass">hello world</h1>
+    <h1 id="myid">welcome to my website</h1>
+
+    <p class="p1">هذا النص مثال على الخط العريض (Bold) والمحاذاة.</p>
+    <p class="p2">هذا النص مثال على الكلام المشطوب (Line-through).</p>
+  </body>
+</html>
+
+
+
+/* --- إعدادات الصفحة العامة --- */
+body {
+  background-color: #f4f4f4; /* لون خلفية الصفحة رمادي فاتح */
+  font-family: Arial, sans-serif; /* نوع الخط المستخدم في الصفحة هو Arial */
+  padding: 20px; /* إضافة مسافة داخلية حول محتوى الصفحة */
+  text-align: center; /* جعل كل النصوص في وسط الصفحة */
+}
+
+/* --- 1. تنسيق العنوان الأول (.myclass) --- */
+.myclass {
+  color: #e74c3c; /* لون النص أحمر */
+  text-transform: uppercase; /* تحويل كل الحروف الإنجليزية إلى حروف كبيرة */
+  text-decoration: underline; /* وضع خط مستقيم تحت الكلام */
+  font-family: Impact, sans-serif; /* تغيير نوع الخط إلى Impact (خط سميك وقوي) */
+  letter-spacing: 2px; /* إضافة مسافة صغيرة بين كل حرف والآخر */
+}
+
+/* --- 2. تنسيق العنوان الثاني (#myid) --- */
+#myid {
+  color: #2980b9; /* لون النص أزرق */
+  text-transform: capitalize; /* جعل الحرف الأول من كل كلمة كبيراً وباقي الحروف صغيرة */
+  font-style: italic; /* جعل الخط مائلاً */
+  text-decoration: overline wavy; /* رسم خط متموج فوق الكلام */
+  text-decoration-color: #333; /* لون الخط المتموج رمادي غامق */
+}
+
+/* --- 3. تنسيق الفقرة العربية الأولى (.p1) --- */
+.p1 {
+  color: darkblue; /* لون النص أزرق غامق */
+  font-size: 24px; /* حجم الخط كبير (24 بكسل) */
+  font-weight: bold; /* جعل الخط سميكاً وعريضاً (Bold) */
+  text-align: right; /* محاذاة النص لجهة اليمين */
+  direction: rtl; /* ضبط اتجاه الكتابة من اليمين لليسار (مهم للعربية) */
+  border: 1px dashed blue; /* وضع إطار متقطع (Dashed) باللون الأزرق حول النص */
+  padding: 10px; /* إضافة مسافة بين النص والإطار */
+}
+
+/* --- 4. تنسيق الفقرة العربية الثانية (.p2) --- */
+.p2 {
+  color: #333; /* لون النص رمادي غامق */
+  font-size: 22px; /* حجم الخط متوسط (22 بكسل) */
+  text-decoration: line-through; /* رسم خط في منتصف الكلام (كأنه مشطوب عليه) */
+  text-align: center; /* محاذاة النص في الوسط */
+}
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تطبيق المحاضرة 28</title>
+
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <h1 class="myclass">heading 1</h1>
+
+    <p>هذا النص تجريبي لنرى الفرق بين العنوان والنصوص العادية.</p>
+  </body>
+</html>
+
+
+
+
+/* تنسيق عام للصفحة لكي يكون الشكل مرتباً */
+body {
+  background-color: #f9f9f9; /* خلفية فاتحة جداً */
+  padding: 50px;
+}
+
+/* --- تطبيق خطوات الأستاذ بالترتيب --- */
+.myclass {
+  /* 1. أولاً: حدد المكان (Alignment) */
+  text-align: center;
+
+  /* 2. ثانياً: اختر شكل الخطوط الزخرفية (Decoration) */
+  text-decoration: double; /* خط مزدوج تحت الكلام */
+  text-decoration-color: red; /* (إضافة مني) لون الخط أحمر ليكون واضحاً */
+
+  /* 3. ثالثاً: حول الحروف لكبيرة (Transformation) */
+  text-transform: uppercase;
+
+  /* 4. رابعاً: حدد نوع وحجم وشكل الخط (Typography) */
+  font-family: Impact, sans-serif;
+  font-size: 50px;
+  font-style: italic;
+  font-weight: bold;
+
+  /* لون النص */
+  color: #333;
+}
