@@ -1,0 +1,27 @@
+/* تنسيق عام للصفحة لكي يكون الشكل مرتباً */
+body {
+  background-color: #f9f9f9; /* خلفية فاتحة جداً */
+  padding: 50px;
+}
+
+/* --- تطبيق خطوات الأستاذ بالترتيب --- */
+.myclass {
+  /* 1. أولاً: حدد المكان (Alignment) */
+  text-align: center;
+
+  /* 2. ثانياً: اختر شكل الخطوط الزخرفية (Decoration) */
+  text-decoration: double; /* خط مزدوج تحت الكلام */
+  text-decoration-color: red; /* (إضافة مني) لون الخط أحمر ليكون واضحاً */
+
+  /* 3. ثالثاً: حول الحروف لكبيرة (Transformation) */
+  text-transform: uppercase;
+
+  /* 4. رابعاً: حدد نوع وحجم وشكل الخط (Typography) */
+  font-family: Impact, sans-serif;
+  font-size: 50px;
+  font-style: italic;
+  font-weight: bold;
+
+  /* لون النص */
+  color: #333;
+}
