@@ -1,0 +1,21 @@
+كماا ذكرت في الفيديو يوجد ثلاث طرق لتضمين الcss في صفحتك
+
+1 inline
+وهذه الطريقة تتلخص في أن يمكنك أن تضع الcss داخل الtag نفسها 
+مثال 
+<h1 style="color: red;"> hello world</h1>
+الطريقة الثانية 
+وهي
+2 page style
+وهي عبارة عن وضع tag الstyle  في الhead مثال
+ <style>
+ h1{
+	color: red
+ }
+ </style>
+ 
+ 3 externeal file 
+ وهذه الطريقة عبارة عن ربط ملف خارجي بالصفحة وهذه هي التطريقة الأفضل
+ مثال
+ <link rel="stylesheet" href="style.css">
+ 

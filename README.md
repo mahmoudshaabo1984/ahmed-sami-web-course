@@ -14,16 +14,19 @@ This is a learning repository. It saves my progress while I learn how to build w
 
 ## Repository Structure
 
-The repository has two main folders.
+The repository has three main folders.
 
 - The `code` folder holds the working websites I built during practice.
 - The `lectures` folder holds the code notes I took while watching each lecture.
+- The `web code` folder holds the original course source files provided by the teacher.
 
-Inside each folder there are three sections.
+Inside each folder there are sections matching the course structure.
 
 - Section 1 covers HTML basics.
 - Section 2 covers more HTML features.
 - Section 3 covers CSS.
+- Section 4 covers deploying websites online.
+- Section 5 covers a full CSS project.
 
 ## Course Topics
 
@@ -61,6 +64,21 @@ This section covers lectures 20 to 29.
 - Lecture 26. Common CSS rules for fonts, alignment, and size.
 - Lectures 27 and 28. More selectors. Building a small site with two pages and two style files.
 - Lecture 29. A full project that puts HTML and CSS together with images.
+
+### Section 4. Deploying Websites
+
+This section covers how to publish a website on the internet for free.
+
+- Netlify. Upload a folder and get a live URL instantly.
+- GitHub Pages. Host a website directly from a GitHub repository.
+
+### Section 5. CSS Project
+
+This section is a complete front-end project built with HTML and CSS.
+
+- A page with a hamburger menu overlay built using only CSS checkboxes and transitions.
+- Styles are split into two files: `style.css` for the page layout and `menu.css` for the menu animation.
+- Google Fonts (Roboto) is loaded from an external link.
 
 ## Technologies Used
 

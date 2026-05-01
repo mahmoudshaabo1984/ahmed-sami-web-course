@@ -1,0 +1,10 @@
+netlify:
+https://www.netlify.com/
+
+github pages 
+https://pages.github.com/
+
+Developer Toolkit
+
+https://addons.nvda-project.org/addons/developerToolkit.en.html#:~:text=Developer%20toolkit%20(DTK)%20is%20an,size%2C%20position%2C%20and%20characteristics.
+
