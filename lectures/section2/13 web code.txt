@@ -1,43 +1,53 @@
-
-
-
+<!-- Lecture 13: HTML forms and input types -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form Example</title>
 </head>
 <body>
-    <form action="proses.php" method="POST">
+    <!-- A form sends user input to a server when the user clicks submit. -->
+    <!-- action is the page that will receive the data. method POST sends data hidden. -->
+    <form action="process.php" method="POST">
+        <!-- text input for plain words -->
         <input type="text" placeholder="user name">
         <br>
+
+        <!-- password input hides the typed letters -->
         <input type="password" placeholder="password">
         <br>
+
+        <!-- email input checks the value looks like an email address -->
         <input type="email" placeholder="email">
         <br>
+
+        <!-- date input shows a date picker -->
         <input type="date">
         <br>
-        <select name="" id="">
-            <option value="mail"></option>
-            <option value="femail"></option>
-            <br>
-            <input type="submit" value="sing">
-            <br>
-            <input type="button" value="sing">
-            <br>
-            <input type="color">
-            <br>
-            <input type="time">
-            
 
-
+        <!-- Bug fix: select can only contain option tags. -->
+        <!-- Old code put inputs and br tags inside select. That is invalid HTML. -->
+        <!-- Bug fix: typo "femail" changed to "female". -->
+        <!-- Bug fix: option tags need visible text between the tags. -->
+        <select name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
         </select>
+        <br>
 
-        
+        <!-- color input shows a color picker -->
+        <input type="color">
+        <br>
 
+        <!-- time input shows a time picker -->
+        <input type="time">
+        <br>
+
+        <!-- Bug fix: button label "sing" changed to "Sign in". -->
+        <input type="submit" value="Sign in">
+        <br>
+        <input type="button" value="Click me">
     </form>
-    
-    
 </body>
 </html>

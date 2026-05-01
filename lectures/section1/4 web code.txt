@@ -1,2 +1,9 @@
-ahmed sami 
-test
+<!-- Lecture 4: Your first HTML page -->
+<!-- HTML uses tags. A tag has an opening <tagname> and a closing </tagname>. -->
+<!-- The text between the tags is the content shown on the page. -->
+
+<!-- The h1 tag is the main heading of the page. Use only one h1 per page. -->
+<h1>ahmed sami</h1>
+
+<!-- The p tag is a paragraph of normal text. -->
+<p>test</p>

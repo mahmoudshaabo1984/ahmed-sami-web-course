@@ -1,4 +1,8 @@
-sv<!DOCTYPE html>
+<!-- Lecture 20: Inline CSS -->
+<!-- Inline CSS means writing the style right inside the tag using the style attribute. -->
+<!-- Use it only for small one-time styles. For real projects use external CSS. -->
+<!-- Bug fix: removed stray "sv" letters that were before <!DOCTYPE html>. -->
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,6 +10,7 @@ sv<!DOCTYPE html>
     <title>Inline CSS</title>
   </head>
   <body>
+    <!-- The style attribute holds CSS rules for this one tag. -->
     <h1 style="color: red">hello world</h1>
 
     <p>Lorem ipsum dolor sit amet, consectetur omnis.</p>

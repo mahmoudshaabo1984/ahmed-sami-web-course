@@ -1,3 +1,9 @@
+<!-- Lecture 21: CSS Priority (Specificity and Cascade) -->
+<!-- This lecture shows three ways to write CSS: external file, internal style, and inline. -->
+<!-- The browser uses an order to decide which one wins when they target the same tag. -->
+<!-- Order from weakest to strongest: external file, internal style, inline style. -->
+
+<!-- ===== File: index.html ===== -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,34 +11,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Priority Test</title>
 
+    <!-- 1. External CSS: linked from a separate file. Lowest priority here. -->
     <link rel="stylesheet" href="style.css" />
 
+    <!-- 2. Internal CSS: written inside a style tag in the head. Beats external. -->
     <style>
-      /* هذا الكود (الأزرق) أقوى من الملف الخارجي (الأحمر) لأنه جاء بعده في الترتيب */
-      /* تأثيره: سيقوم بتلوين كل عناوين h1 في الصفحة بالأزرق ما لم يوجد كود مباشر */
+      /* This rule says all h1 should be blue. */
+      /* It overrides the red rule from style.css because internal beats external. */
       h1 {
         color: blue;
       }
     </style>
   </head>
   <body>
+    <!-- 3. Inline CSS: written in the style attribute on the tag itself. Highest priority. -->
+    <!-- The h1 below will be yellow because inline beats both internal and external. -->
     <h1 style="color: yellow">hello world</h1>
 
     <p>Lorem ipsum dolor sit amet.</p>
   </body>
 </html>
 
+<!-- Bug fix: the CSS below used to be after </html> in the same file. -->
+<!-- That is wrong. CSS in a .css file must live in its own file, not after the html. -->
+<!-- It is shown here as a separate block so the lecture stays in one note. -->
 
-
-
-
-
-
-/* هذا هو الملف الخارجي External CSS */
-
+<!-- ===== File: style.css ===== -->
+/* This is the external CSS file. */
 h1 {
-  /* طلبنا هنا أن يكون اللون أحمر */
-  /* تأثيره: سيتم تطبيقه فقط إذا لم يكن هناك كود داخلي (internal) أو مباشر (inline) يعارضه */
-  /* في مثالنا هذا، لن يظهر اللون الأحمر لأن "الأزرق" و"الأصفر" أقوى منه */
+  /* This rule says h1 should be red. */
+  /* It only wins if there is no internal or inline rule on the same tag. */
+  /* In this lecture the result is yellow because inline beats everything. */
   color: red;
 }

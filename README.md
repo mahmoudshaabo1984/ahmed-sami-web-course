@@ -1,67 +1,78 @@
-# ahmed-sami-web-course 🌐
+# Ahmed Sami Web Development Course
 
-هذا المستودع خاص بكورس تطوير الويب للأستاذ **أحمد سامي**، ويحتوي على كود التدريب ومذكرات المحاضرات التي قام بها الطالب **محمود شعابو** خلال رحلته في تعلم تطوير الويب.
+This repository holds my notes and practice code from the web development course taught by Ahmed Sami.
 
----
+## About This Repository
 
-## 📁 هيكل المستودع
+This is a learning repository. It saves my progress while I learn how to build websites. Each lecture has its own folder with code I wrote during the lesson.
 
-```
-ahmed-sami-web-course/
-├── code/          # مشاريع وتمارين الكود العملية
-│   ├── section1/  # أساسيات HTML
-│   ├── section2/  # عناصر HTML المتقدمة
-│   └── section3/  # CSS
-└── lectures/      # مذكرات كود المحاضرات
-    ├── section1/
-    ├── section2/
-    └── section3/
-```
+## Student Information
 
----
+- Student name: Mahmoud Shaabo
+- Teacher name: Ahmed Sami
+- Teacher channel: [Ahmed Sami on YouTube](https://www.youtube.com/@ahmedsami31)
 
-## 📚 محتوى الكورس
+## Repository Structure
 
-### 🔹 القسم الأول – أساسيات HTML (المحاضرات 4–6)
-- عناصر العناوين `<h1>` إلى `<h6>`
-- الفقرات `<p>` والروابط `<a>`
-- بنية صفحة HTML الكاملة (`DOCTYPE`, `<html>`, `<head>`, `<body>`)
-- واجب منزلي: بناء صفحة تعريفية شخصية
+The repository has two main folders.
 
-### 🔹 القسم الثاني – عناصر HTML المتقدمة (المحاضرات 8–18)
-- **المحاضرة 8–9**: مراجعة العناوين والفقرات والروابط، عناصر HTML5 الدلالية (`<main>`, `<section>`, `<aside>`, `<div>`)
-- **المحاضرة 10**: العناصر المضمّنة (inline): `<span>`, `<strong>`, `<em>`, `<u>`، الصور `<img>`
-- **المحاضرة 11**: القوائم المرتبة `<ol>` وغير المرتبة `<ul>` وقوائم التنقل
-- **المحاضرة 12**: الجداول `<table>`, `<tr>`, `<th>`, `<td>`
-- **المحاضرة 13**: النماذج `<form>` وعناصر الإدخال المختلفة (`text`, `password`, `email`, `date`, `color`, `time`, `select`)
-- **المحاضرة 14**: الرموز الخاصة في HTML (HTML Entities) مثل `&lt;`, `&gt;`, `&nbsp;`
-- **المحاضرة 15**: تضمين الصوت `<audio>` والفيديو `<video>` مع الملفات المرفقة
-- **المحاضرة 16**: تضمين محتوى خارجي بواسطة `<iframe>` (يوتيوب وويكيبيديا)
-- **المحاضرة 18**: مشروع مدونة كاملة (Blog) باستخدام `<article>`, `<nav>`, `<footer>`, `<hr>`
+- The `code` folder holds the working websites I built during practice.
+- The `lectures` folder holds the code notes I took while watching each lecture.
 
-### 🔹 القسم الثالث – CSS (المحاضرات 20–29)
-- **المحاضرة 20**: طرق إضافة CSS الثلاث (Inline – Internal – External)
-- **المحاضرة 21**: أولوية CSS (CSS Specificity & Cascade)
-- **المحاضرة 22**: المحددات (Selectors): محدد الكلاس `.class` ومحدد المعرّف `#id`
-- **المحاضرة 25**: نموذج الألوان وتنسيقاتها (`color`, `rgb()`, `rgba()`)
-- **المحاضرة 26**: خصائص CSS المتنوعة (الخط، المحاذاة، الحجم، إلخ)
-- **المحاضرة 27–28**: محددات متقدمة وتصميم صفحات متعددة (`index.html`, `index1.html`, `style.css`, `style1.css`)
-- **المحاضرة 29**: مشروع تطبيقي شامل يجمع HTML و CSS مع صور خارجية
+Inside each folder there are three sections.
 
----
+- Section 1 covers HTML basics.
+- Section 2 covers more HTML features.
+- Section 3 covers CSS.
 
-## 🛠️ التقنيات المستخدمة
+## Course Topics
 
-| التقنية | الوصف |
-|---------|-------|
-| **HTML5** | هيكل صفحات الويب |
-| **CSS3** | تنسيق وتصميم الصفحات |
+### Section 1. HTML Basics
 
----
+This section covers lectures 4 to 6.
 
-## 👨‍💻 معلومات
+- Heading tags from `h1` to `h6`.
+- Paragraph tag `p` and link tag `a`.
+- The full page layout: `DOCTYPE`, `html`, `head`, and `body`.
+- Homework: build a simple page about myself.
 
-- **الأستاذ**: أحمد سامي
-- **الطالب**: محمود شعابو
-- **قناة الأستاذ**: [YouTube – Ahmed Sami](https://www.youtube.com/@ahmedsami31)
- 
+### Section 2. More HTML
+
+This section covers lectures 8 to 18.
+
+- Lectures 8 and 9. Review of headings, paragraphs, and links. Semantic tags like `main`, `section`, `aside`, and `div`.
+- Lecture 10. Inline tags such as `span`, `strong`, `em`, and `u`. Adding images with `img`.
+- Lecture 11. Lists. Ordered list `ol` and unordered list `ul`. Navigation lists.
+- Lecture 12. Tables with `table`, `tr`, `th`, and `td`.
+- Lecture 13. Forms with `form` and inputs of type `text`, `password`, `email`, `date`, `color`, `time`, and `select`.
+- Lecture 14. HTML entities like `&lt;`, `&gt;`, and `&nbsp;`.
+- Lecture 15. Audio with `audio` and video with `video`.
+- Lecture 16. Embedding pages with `iframe`. Examples include YouTube and Wikipedia.
+- Lecture 18. A small blog project using `article`, `nav`, `footer`, and `hr`.
+
+### Section 3. CSS
+
+This section covers lectures 20 to 29.
+
+- Lecture 20. Three ways to write CSS: inline, internal, and external.
+- Lecture 21. CSS priority. How the browser picks which rule wins.
+- Lecture 22. Selectors. The class selector `.class` and the id selector `#id`.
+- Lecture 25. Colors. Names, `rgb`, and `rgba`.
+- Lecture 26. Common CSS rules for fonts, alignment, and size.
+- Lectures 27 and 28. More selectors. Building a small site with two pages and two style files.
+- Lecture 29. A full project that puts HTML and CSS together with images.
+
+## Technologies Used
+
+- HTML5 builds the structure of the page.
+- CSS3 styles the page and makes it look nice.
+
+## How to Use This Repository
+
+1. Download the repository to your computer.
+2. Open the folder you want to read in any code editor.
+3. Open the HTML file in your web browser to see the result.
+
+## Accessibility Note
+
+This README uses simple English and a clear heading order. It works well with screen readers such as NVDA on Windows, VoiceOver on macOS and iOS, TalkBack on Android, and Orca on Linux.
