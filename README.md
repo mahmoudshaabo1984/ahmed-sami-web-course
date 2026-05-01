@@ -1,16 +1,22 @@
 # Ahmed Sami Web Development Course
 
-This repository holds my notes and practice code from the web development course taught by Ahmed Sami.
+This repository holds my notes and practice code from the web development course taught by Ahmed Samy El-khouly.
 
 ## About This Repository
 
-This is a learning repository. It saves my progress while I learn how to build websites. Each lecture has its own folder with code I wrote during the lesson.
+This is a learning repository. It saves my progress while I learn how to build websites from scratch using HTML5 and CSS3. Each lecture has its own folder with code I wrote during the lesson.
+
+The course is titled **Rock Foundation in the Web World** (صخرة الأساس في عالم الويب). It teaches web design from zero to professional level and is compatible with screen reader users.
 
 ## Student Information
 
 - Student name: Mahmoud Shaabo
-- Teacher name: Ahmed Sami
-- Teacher channel: [Ahmed Sami on YouTube](https://www.youtube.com/@ahmedsami31)
+- Teacher name: Ahmed Samy El-khouly
+- Teacher channel: [Ahmed Samy on YouTube](https://www.youtube.com/@ahmedthebest)
+- Course link: [Rock Foundation in the Web World on Udemy](https://www.udemy.com/course/rockforweb/)
+- Course rating: 4.8 out of 5
+- Course language: Arabic
+- Total length: 8 hours 55 minutes across 55 lectures
 
 ## Repository Structure
 
@@ -30,55 +36,67 @@ Inside each folder there are sections matching the course structure.
 
 ## Course Topics
 
-### Section 1. HTML Basics
+The course has five sections with 55 lectures totalling 8 hours and 55 minutes.
 
-This section covers lectures 4 to 6.
+### Section 1. Introduction (6 lectures, 40 min)
 
-- Heading tags from `h1` to `h6`.
-- Paragraph tag `p` and link tag `a`.
-- The full page layout: `DOCTYPE`, `html`, `head`, and `body`.
-- Homework: build a simple page about myself.
+A fast and simple introduction to HTML and building your first web page.
 
-### Section 2. More HTML
+- Setting up the code editor.
+- Writing the first HTML page.
+- Understanding the basic structure: `DOCTYPE`, `html`, `head`, and `body`.
+- Heading tags from `h1` to `h6`, paragraph tag `p`, and link tag `a`.
 
-This section covers lectures 8 to 18.
+### Section 2. HTML (12 lectures, 2 hr 31 min)
 
-- Lectures 8 and 9. Review of headings, paragraphs, and links. Semantic tags like `main`, `section`, `aside`, and `div`.
-- Lecture 10. Inline tags such as `span`, `strong`, `em`, and `u`. Adding images with `img`.
-- Lecture 11. Lists. Ordered list `ol` and unordered list `ul`. Navigation lists.
-- Lecture 12. Tables with `table`, `tr`, `th`, and `td`.
-- Lecture 13. Forms with `form` and inputs of type `text`, `password`, `email`, `date`, `color`, `time`, and `select`.
-- Lecture 14. HTML entities like `&lt;`, `&gt;`, and `&nbsp;`.
-- Lecture 15. Audio with `audio` and video with `video`.
-- Lecture 16. Embedding pages with `iframe`. Examples include YouTube and Wikipedia.
-- Lecture 18. A small blog project using `article`, `nav`, `footer`, and `hr`.
+A complete guide to HTML5 from basics to advanced topics.
 
-### Section 3. CSS
+- Semantic tags like `main`, `section`, `aside`, and `div`.
+- Inline tags such as `span`, `strong`, `em`, and `u`. Adding images with `img`.
+- Lists. Ordered list `ol` and unordered list `ul`. Navigation lists.
+- Tables with `table`, `tr`, `th`, and `td`.
+- Forms with `form` and inputs of type `text`, `password`, `email`, `date`, `color`, `time`, and `select`.
+- HTML entities like `&lt;`, `&gt;`, and `&nbsp;`.
+- Audio with `audio` and video with `video`.
+- Embedding pages with `iframe`. Examples include YouTube and Wikipedia.
+- A small blog project using `article`, `nav`, `footer`, and `hr`.
 
-This section covers lectures 20 to 29.
+### Section 3. CSS (20 lectures, 3 hr 39 min)
 
-- Lecture 20. Three ways to write CSS: inline, internal, and external.
-- Lecture 21. CSS priority. How the browser picks which rule wins.
-- Lecture 22. Selectors. The class selector `.class` and the id selector `#id`.
-- Lecture 25. Colors. Names, `rgb`, and `rgba`.
-- Lecture 26. Common CSS rules for fonts, alignment, and size.
-- Lectures 27 and 28. More selectors. Building a small site with two pages and two style files.
-- Lecture 29. A full project that puts HTML and CSS together with images.
+A complete guide to CSS3 for styling and layout.
 
-### Section 4. Deploying Websites
+- Three ways to write CSS: inline, internal, and external.
+- CSS priority. How the browser picks which rule wins.
+- Selectors. The class selector `.class` and the id selector `#id`.
+- Colors. Names, `rgb`, and `rgba`.
+- Common CSS rules for fonts, alignment, and size.
+- More selectors. Building a small site with two pages and two style files.
+- A full project that puts HTML and CSS together with images.
 
-This section covers how to publish a website on the internet for free.
+### Section 4. Imported Notes (6 lectures, 46 min)
 
-- Netlify. Upload a folder and get a live URL instantly.
-- GitHub Pages. Host a website directly from a GitHub repository.
+Important topics for taking your skills to the next level.
 
-### Section 5. CSS Project
+- How to earn money from web design skills.
+- Deploying a website online for free using Netlify and GitHub Pages.
+- A hamburger menu overlay project built using only CSS checkboxes and transitions.
 
-This section is a complete front-end project built with HTML and CSS.
+### Section 5. Full Design Project (11 lectures, 1 hr 20 min)
 
-- A page with a hamburger menu overlay built using only CSS checkboxes and transitions.
-- Styles are split into two files: `style.css` for the page layout and `menu.css` for the menu animation.
-- Google Fonts (Roboto) is loaded from an external link.
+A complete professional website built from scratch using HTML5 and CSS3.
+
+- Responsive design that works on desktop, tablet, and mobile screens.
+- Combining all skills learned in the course into one real-world project.
+
+## What You Will Learn
+
+By the end of this course you will be able to:
+
+- Design and build professional websites from scratch using HTML5 and CSS3.
+- Write correct HTML that meets web standards and appears in search engines.
+- Build responsive websites that work on any screen size.
+- Deploy your website online for free using multiple methods.
+- Start working in the web design market.
 
 ## Technologies Used
 
