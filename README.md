@@ -71,7 +71,14 @@ A complete guide to CSS3 for styling and layout.
 - Colors. Names, `rgb`, and `rgba`.
 - Common CSS rules for fonts, alignment, and size.
 - More selectors. Building a small site with two pages and two style files.
+- Padding and margin. The box model and shorthand values.
+- Link styling with pseudo-classes `a:hover` and `a:visited`. Button styling.
+- The display property. `inline`, `block`, and `inline-block`.
+- List styling and building navigation menus with `ul` and `li`.
+- Float and overflow. Using `float: right`, `overflow: hidden`, and `clear: both`.
+- CSS positioning. Six types: `static`, `relative`, `absolute`, `fixed`, `initial`, and `inherit`. Layering with `z-index`.
 - A full project that puts HTML and CSS together with images.
+- A final review project combining all CSS concepts into one complete website.
 
 ### Section 4. Imported Notes (6 lectures, 46 min)
 

@@ -1,0 +1,22 @@
+/* قائمة التنقل الرئيسية */
+.nav {
+  list-style-type: none; /* إخفاء النقاط */
+  background: #f00; /* خلفية حمراء */
+  border: 1px solid black; /* إطار أسود */
+}
+/* عناصر القائمة */
+.nav li {
+  display: inline-block; /* العناصر في صف أفقي */
+  padding: 5px; /* حشو داخلي */
+  margin: 0 5px; /* مسافة بين العناصر */
+}
+/* الروابط داخل القائمة */
+.nav li a {
+  text-decoration: none; /* إزالة الخط السفلي */
+  color: #000; /* لون النص أسود */
+}
+/* عند مرور الماوس فوق الرابط */
+.nav li a:hover {
+  font-weight: bold; /* نص سميك */
+  color: #fff; /* نص أبيض */
+}

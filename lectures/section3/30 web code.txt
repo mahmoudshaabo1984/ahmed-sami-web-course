@@ -1,0 +1,41 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Padding and Margin Lesson</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <h1>heading1</h1>
+
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      Voluptatibus, repellat.
+    </p>
+
+    <img src="files/mahmoud.jpg" alt="mahmoud" />
+  </body>
+</html>
+
+
+
+
+
+
+css
+img {
+  width: 100px;
+  height: 100px;
+
+  /* margin-top: 100px;    */
+  /* margin-left: 50px;    */
+
+  margin: 100px 0 0 100px;
+}
+
+h1 {
+  background-color: #f00;
+  padding-top: 12px;
+}

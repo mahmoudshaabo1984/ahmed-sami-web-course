@@ -1,0 +1,116 @@
+============================================================
+المحاضرة 38 - المشروع النهائي (موقع مراجعة Section 3)
+ملف: web site 38 review
+============================================================
+
+
+------------------------------------------------------------
+index.html
+------------------------------------------------------------
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>website</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">articles</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="show-case">
+      <h1>welcome</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt sit
+        cumque harum, unde esse aperiam at magnam saepe perferendis nobis!
+      </p>
+    </section>
+    <main>
+      <h3>content</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At quisquam
+        iusto adipisci neque est nam eius ex officia aliquam repellendus vero
+        dolore consequuntur. Ipsum officia numquam similique inventore dolorem
+      </p>
+      <h3>learn steps</h3>
+      <ol>
+        <li>html</li>
+        <li>css</li>
+        <li>javascript</li>
+        <li>node js</li>
+      </ol>
+    </main>
+    <footer>&copy; 2020 dd inc</footer>
+  </body>
+</html>
+
+
+------------------------------------------------------------
+main.css
+------------------------------------------------------------
+
+/* global style */
+body {
+  background-color: #777;                                  /* لون رمادي للخلفية */
+  font-size: 16px;                                         /* حجم الخط الافتراضي */
+  line-height: 1.3rem;                                     /* المسافة بين السطور */
+  font-family: Georgia, "Times New Roman", Times, serif;   /* نوع الخط */
+}
+/* end global style */
+
+/* start header */
+header {
+  background-image: url(./bg.jpg);   /* صورة الخلفية */
+  background-size: cover;            /* تغطية كامل المساحة */
+  text-align: center;                /* توسيط النص */
+  height: 400px;                     /* ارتفاع الترويسة */
+}
+
+header nav ul {
+  list-style-type: none;   /* إخفاء النقاط */
+  padding: 0;              /* إزالة الحشو الافتراضي */
+}
+
+header nav ul li {
+  display: inline;         /* العناصر في صف واحد */
+  font-weight: bold;       /* خط سميك */
+  text-decoration: none;   /* إزالة الخط السفلي */
+  color: #fff;             /* لون النص أبيض */
+  margin: 5px 10px;        /* مسافة بين العناصر */
+}
+/* end header */
+
+/* start show case */
+.show-case {
+  background: #00f;        /* خلفية زرقاء */
+  color: #fff;             /* نص أبيض */
+  text-align: center;      /* توسيط النص */
+  padding: 10px 30px;      /* حشو داخلي */
+}
+/* end show case */
+
+/* start main area */
+main {
+  border: 1px solid black;   /* إطار أسود رفيع */
+  font-size: 20px;           /* حجم الخط */
+  text-align: center;        /* توسيط المحتوى */
+}
+/* end main area */
+
+/* start footer */
+footer {
+  background: brown;              /* خلفية بنية */
+  color: rgb(255, 255, 255);      /* نص أبيض */
+  padding: 20px 10px;             /* حشو علوي وسفلي */
+  text-align: center;             /* توسيط النص */
+}
+/* end footer */

@@ -1,0 +1,67 @@
+
+html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Link Styling Lesson</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a href="www.google.com">google</a>
+    <br />
+    <a href="www.facebook.com">fcebook</a>
+  </body>
+</html>
+
+
+
+
+
+
+css
+/* الرابط في حالته الطبيعية */
+a {
+  text-decoration: none;   /* إزالة الخط السفلي */
+  background-color: #ff0;  /* خلفية صفراء */
+  border: 2px solid #000;  /* إطار أسود */
+  color: #000;             /* نص أسود */
+  border-radius: 3%;       /* حواف دائرية خفيفة */
+}
+
+/* عند تمرير الماوس فوق الرابط */
+a:hover {
+  background: #333;        /* خلفية رمادية غامقة */
+  color: #fff;             /* نص أبيض */
+  font-weight: 900;        /* خط سميك جداً */
+}
+
+/* الرابط بعد الزيارة */
+a:visited {
+  color: #0c0;             /* لون أخضر يدل على الزيارة السابقة */
+}
+
+
+
+
+
+
+
+الكود css بدون ازرار الكود الأول في المحاضرة 34
+/* الرابط في حالته الطبيعية */
+a {
+  text-decoration: none; /* إزالة الخط السفلي */
+  color: #000;           /* نص أسود */
+}
+
+/* عند تمرير الماوس فوق الرابط */
+a:hover {
+  color: #ff0;           /* نص أصفر */
+  font-weight: bold;     /* خط سميك */
+}
+
+/* الرابط بعد الزيارة */
+a:visited {
+  color: #0c0;           /* لون أخضر */
+}

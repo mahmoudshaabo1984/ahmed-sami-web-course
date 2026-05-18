@@ -1,0 +1,16 @@
+body {
+  height: 4000px; /* لتجربة التمرير مع fixed */
+}
+
+.container {
+  width: 600px; /* العرض */
+  height: 500px; /* الارتفاع */
+  border: 3px solid black; /* إطار أسود */
+  margin: 0 auto; /* توسيط الحاوية */
+  position: relative; /* مرجع لأي absolute بداخلها */
+}
+
+.container h1 {
+  position: fixed; /* يثبت على الشاشة عند التمرير */
+  z-index: 10; /* يظهر فوق العناصر الأخرى */
+}

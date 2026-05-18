@@ -1,0 +1,60 @@
+/* global style */
+body {
+  background-color: #777;          /* لون رمادي للخلفية */
+  font-size: 16px;                 /* حجم الخط الافتراضي */
+  line-height: 1.3rem;             /* المسافة بين السطور */
+  font-family: Georgia, "Times New Roman", Times, serif; /* الخط */
+}
+/* end global style */
+
+
+/* start header */
+header {
+  background-image: url(./bg.jpg); /* صورة الخلفية */
+  background-size: cover;          /* تغطية كامل المساحة */
+  text-align: center;              /* توسيط النص */
+  height: 400px;                   /* ارتفاع الترويسة */
+}
+
+header nav ul {
+  list-style-type: none;           /* إخفاء النقاط */
+  padding: 0;                      /* إزالة الحشو الافتراضي */
+}
+
+header nav ul li {
+  display: inline;                 /* العناصر في صف واحد */
+  font-weight: bold;               /* خط سميك */
+  text-decoration: none;           /* إزالة الخط السفلي */
+  color: #fff;                     /* لون النص أبيض */
+  margin: 5px 10px;                /* مسافة بين العناصر */
+}
+/* end header */
+
+
+/* start show case */
+.show-case {
+  background: #00f;                /* خلفية زرقاء */
+  color: #fff;                     /* نص أبيض */
+  text-align: center;              /* توسيط النص */
+  padding: 10px 30px;              /* حشو داخلي */
+}
+/* end show case */
+
+
+/* start main area */
+main {
+  border: 1px solid black;         /* إطار أسود رفيع */
+  font-size: 20px;                 /* حجم الخط */
+  text-align: center;              /* توسيط المحتوى */
+}
+/* end main area */
+
+
+/* start footer */
+footer {
+  background: brown;               /* خلفية بنية */
+  color: rgb(255, 255, 255);       /* نص أبيض */
+  padding: 20px 10px;              /* حشو علوي وسفلي */
+  text-align: center;              /* توسيط النص */
+}
+/* end footer */

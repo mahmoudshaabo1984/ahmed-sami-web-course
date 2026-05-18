@@ -1,0 +1,126 @@
+
+الكود الأول 
+html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float and Overflow Lesson</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>heading1</h1>
+      <h2>heading2</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam,
+        blanditiis!
+      </p>
+    </div>
+  </body>
+</html>
+
+
+
+الكود الأول 
+css
+.container {
+}
+.container h1 {
+  float: right; /* h1 يطفو على اليمين */
+}
+
+
+
+الكود الثاني 
+html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float and Overflow Lesson</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>heading1</h1>
+      <h2>heading2</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam,
+        blanditiis!
+      </p>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+
+الكود الثاني 
+css 
+.container {
+  overflow: hidden; /* الحاوية تحتوي العناصر الطائرة تلقائياً */
+}
+
+.container h1 {
+  float: right; /* h1 يطفو على اليمين */
+}
+
+
+
+
+الكود الثالث والأخير الصحيح 
+html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float and Overflow Lesson</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>heading1</h1>
+      <h2>heading2</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam,
+        blanditiis!
+      </p>
+      <div class="cp"></div>
+    </div>
+  </body>
+</html>
+
+الكود الثالث والأخير الصحيح 
+css
+/* الطريقة الأولى: أضف هذا لـ .container بدلاً من .cp
+   overflow: hidden;
+*/
+
+/* h1 يطفو على اليمين */
+.container h1 {
+  float: right;
+}
+
+/* الطريقة الثانية: يوقف تأثير float */
+.cp {
+  clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,13 @@
+/* الطريقة الأولى: أضف هذا لـ .container بدلاً من .cp
+   overflow: hidden;
+*/
+
+/* h1 يطفو على اليمين */
+.container h1 {
+  float: right;
+}
+
+/* الطريقة الثانية: يوقف تأثير float */
+.cp {
+  clear: both;
+}

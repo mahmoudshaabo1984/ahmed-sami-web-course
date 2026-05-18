@@ -1,0 +1,37 @@
+/* body طويل لتجربة fixed مع التمرير */
+body {
+  height: 4000px;
+}
+
+/* الحاوية: position relative ليكون مرجعاً لـ absolute داخلها */
+.container {
+  width: 600px;
+  height: 500px;
+  border: 3px solid black;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* جرب تغيير قيمة position واحدة واحدة */
+.container h1 {
+  /* النوع 1: static - الافتراضي، لا يتأثر بـ top/left */
+  /* position: static; */
+
+  /* النوع 2: relative - يتحرك من مكانه الأصلي */
+  /* position: relative; */
+
+  /* النوع 3: absolute - يتموضع حسب أقرب أب له position */
+  position: absolute;
+
+  /* النوع 4: fixed - يثبت على الشاشة حتى عند التمرير */
+  /* position: fixed; */
+
+  /* النوع 5: initial - يعيد القيمة للوضع الافتراضي */
+  /* position: initial; */
+
+  /* النوع 6: inherit - يرث القيمة من العنصر الأب */
+  /* position: inherit; */
+
+  top: 40px;    /* مسافة من الأعلى */
+  z-index: 10;  /* ترتيب الطبقات */
+}

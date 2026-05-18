@@ -1,0 +1,10 @@
+/* h1 عنصر block: يأخذ سطراً كاملاً */
+h1 {
+  display: inline; /* تحويله إلى inline ليصطف مع غيره */
+}
+/* img عنصر inline-block: يصطف ويقبل width/height */
+img {
+  width: 199px; /* العرض */
+  height: 100px; /* الارتفاع */
+  display: inline-block; /* جرب: block / inline / none */
+}
