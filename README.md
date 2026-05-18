@@ -31,7 +31,7 @@ The repository has three main folders.
 - The **`code`** and **`lectures`** folders include my work for **course sections 1 to 3 only** (HTML basics, more HTML, and CSS). They do **not** include a separate Section 4 or Section 5 practice tree.
 - In **`code/section1`**, practice files start at **lecture 4** (lectures 1–3 from the course are not duplicated here).
 - **Section 4** and **Section 5** materials from the teacher appear under **`web code/section4`** and **`web code/section5`** only (for example Section 4 notes as `links.txt` and Section 5 as the full project with `index.html` and `css/`).
-- Teacher files under **`web code/section3`** use a nested folder named **`section2`** (this is how the course bundle is organized here, not a mistake in this README).
+- Teacher files under **`web code/section3/section3/`** hold the original CSS section materials (numbered lesson folders such as 002, 003, and `base`).
 
 Inside each top-level folder, sections follow the course topics where present:
 

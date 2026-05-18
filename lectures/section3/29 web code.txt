@@ -1,16 +1,9 @@
-================================================================================
-المحاضرة 29 — خلفيات: background-image، repeat، size، position
-المجلد: code/section3/web site 29/ (تأكد من وجود files/mahmoud.jpg أو عدّل المسار)
-================================================================================
-
-ملاحظة: نفس بنية HTML تقريباً مثل محاضرة 28، لكن التركيز هنا على CSS للخلفية.
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Background image lesson</title>
+    <title>Text Formatting Lesson</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -22,25 +15,47 @@
   </body>
 </html>
 
-/* style.css — خلفية الصفحة والعناصر */
+
+
+
+/* تطبيق خصائص الخلفية على كامل الصفحة (body) 
+   كما ظهر في الصور الأخيرة من المحاضرة
+*/
 body {
+  /* 1. تحديد الصورة: نكتب اسم المجلد ثم اسم الصورة */
+  /* ملاحظة: تأكد هل امتداد صورتك jpg أم png */
   background-image: url("files/mahmoud.jpg");
+
+  /* 2. منع تكرار الصورة: حتى لا تظهر كأنها بلاط متكرر */
   background-repeat: no-repeat;
+
+  /* 3. حجم الخلفية: cover تجعل الصورة تغطي الشاشة بالكامل دون فراغات */
   background-size: cover;
+
+  /* 4. مكان الخلفية: center يجعل منتصف الصورة في منتصف الشاشة */
   background-position: center;
+
+  /* لون خلفية احتياطي يظهر في حال فشل تحميل الصورة */
   background-color: #ddd;
+
+  /* تنسيق النص ليظهر بوضوح فوق الصورة (إضافي مني) */
   color: white;
   font-family: Arial, sans-serif;
 }
 
+/* تطبيق لون خلفية لعنصر محدد (h1)
+   كما ظهر في الصورة الثالثة (خلفية حمراء للنص)
+*/
 .myclass {
+  /* تلوين خلفية النص فقط باللون الأحمر كما فعل الأستاذ */
   background-color: #f00;
-  padding: 10px;
-  width: fit-content;
+  padding: 10px; /* مسافة داخلية لتحسين الشكل */
+  width: fit-content; /* الخلفية تكون على قد الكلام فقط */
 }
 
+/* تنسيقات إضافية للعناصر الأخرى الموجودة في كود HTML الخاص بك */
 #myid {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5); /* خلفية سوداء شفافة */
   padding: 10px;
 }
 

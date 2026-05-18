@@ -1,9 +1,4 @@
-================================================================================
-المحاضرة 11 — قوائم غير مرتبة ul، مرتبة ol، قوائم تنقل
-المجلد: code/section2/web site 11/index.html
-================================================================================
 
-ملاحظة: الروابط لـ about.html و contact.html و store.html تتطلَّب وجود هذه الملفات في نفس المجلد.
 
 <!DOCTYPE html>
 <html lang="en">
@@ -21,18 +16,25 @@
         <li>list item</li>
     </ul>
 
-    <ol>
-        <li>list item</li>
-        <li>list item</li>
-        <li>list item</li>
-        <li>list item</li>
-        <li>list item</li>
-    </ol>
 
-    <ul>
-        <li><a href="about.html">about</a></li>
-        <li><a href="contact.html">contact</a></li>
-        <li><a href="store.html">store</a></li>
-    </ul>
+        <ol>
+        <li>list item</li>
+        <li>list item</li>
+        <li>list item</li>
+        <li>list item</li>
+        <li>list item</li>
+        </ol>
+
+
+<ul>
+    <li><a href="about.html">about</a></li>
+    <li><a href="contact.html">contact</a></li>
+    <li><a href="store.html">store</a></li>
+
+</ul>
+
+
+
+    
 </body>
 </html>
