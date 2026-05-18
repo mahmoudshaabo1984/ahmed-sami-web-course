@@ -6,14 +6,16 @@
 تذكير: تأكد أن الملف files/roro harb.mp4 موجود إن أردت أن يعمل التشغيل.
 
 --------------------------------------------------------------------------------
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<!-- ===== ملف: index.html (مجلد web site 15 test) ===== -->
+--------------------------------------------------------------------------------
+<!DOCTYPE html> <!-- HTML5 -->
+<html lang="en"> <!-- لغة الصفحة -->
+<head> <!-- رأس المستند -->
+    <meta charset="UTF-8"> <!-- ترميز -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- متجاوب -->
+    <title>Document</title> <!-- عنوان التبويب -->
 </head>
-<body>
+<body> <!-- نفس البنية مع فيديو باسم ملف فيه مسافة -->
     <h1>audio</h1>
     <audio src="files/song.mp3" controls></audio>
     <br>
@@ -31,5 +33,5 @@
 
     
     
-</body>
-</html>
+</body> <!-- نهاية الصفحة -->
+</html> <!-- نهاية المستند -->

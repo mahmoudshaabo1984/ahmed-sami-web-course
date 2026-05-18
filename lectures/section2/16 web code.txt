@@ -4,38 +4,45 @@
 ما تتعلمه: iframe ينسخ محتوى من موقع آخر داخل صفحتك (فيديو يوتيوب، ويكيبيديا).
 أين الكود: code/section2/web site 16/index.html
 ملاحظة accessibility: استخدم دائماً title على iframe يصف المحتوى.
+تنبيه: لا تضع تعليقات HTML داخل قائمة صفات الوسم (بين width و src)؛ التعليقات فوق أو بعد الوسم.
 
 --------------------------------------------------------------------------------
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Iframe Lesson</title>
+<!-- ===== ملف: index.html ===== -->
+--------------------------------------------------------------------------------
+<!DOCTYPE html> <!-- HTML5 -->
+<html lang="en"> <!-- لغة الصفحة -->
+  <head> <!-- رأس المستند -->
+    <meta charset="UTF-8" /> <!-- ترميز -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- متجاوب -->
+    <title>Iframe Lesson</title> <!-- عنوان التبويب -->
   </head>
-  <body>
+  <body> <!-- المحتوى المرئي -->
     <h2>1. YouTube Video</h2> <!-- عنوان فرعي -->
-    <!-- iframe: إطار مضمن؛ src رابط التضمين من يوتيوب -->
-    <iframe
-      width="560" <!-- عرض الإطار بالبكسل -->
-      height="315" <!-- ارتفاع الإطار -->
-      src="https://www.youtube.com/embed/uANa1UC5VrY" <!-- رابط التضمين -->
-      title="YouTube video player" <!-- وصف لقارئ الشاشة -->
-      frameborder="0" <!-- سُميك حدود الإطار (قديم؛ غالباً يُستبدل بـ CSS) -->
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" <!-- صلاحيات المتصفح -->
-      allowfullscreen <!-- السماح بملء الشاشة -->
-    >
-    </iframe>
 
-    <br /><br /> <!-- مسافة بصرية -->
-
-    <h2>2. Wikipedia Page</h2>
+    <!-- iframe يوتيوب: width/height بالبكسل؛ src رابط التضمين (embed) وليس رابط المشاهدة العادي -->
+    <!-- title لوصف لقارئ الشاشة؛ frameborder قديم لكنه ما زال يظهر في أمثلة كثيرة -->
+    <!-- allow يحدد صلاحيات تشغيل الفيديو والوسائط؛ allowfullscreen يفعل زر ملء الشاشة -->
     <iframe
-      src="https://www.wikipedia.org" <!-- صفحة ويكيبيديا الرئيسية -->
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/uANa1UC5VrY"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+
+    <br /><br /> <!-- مسافة بصرية بين الإطارين -->
+
+    <h2>2. Wikipedia Page</h2> <!-- مثال ثانٍ: صفحة كاملة داخل إطار -->
+
+    <!-- نفس فكرة iframe؛ غيّر الأبعاد حسب التصميم -->
+    <iframe
+      src="https://www.wikipedia.org"
       width="600"
       height="400"
+      title="Wikipedia main page"
       frameborder="1"
-    >
-    </iframe>
-  </body>
-</html>
+    ></iframe>
+  </body> <!-- نهاية body -->
+</html> <!-- نهاية المستند -->

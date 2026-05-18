@@ -6,14 +6,16 @@
 ملاحظة: proses.php — اسم ملف تجريبي؛ قد يكون المقصود process.
 
 --------------------------------------------------------------------------------
-<!DOCTYPE html>
-<html lang="en">
-  <head>
+<!-- ===== ملف: test.html ===== -->
+--------------------------------------------------------------------------------
+<!DOCTYPE html> <!-- HTML5 -->
+<html lang="en"> <!-- لغة الصفحة -->
+  <head> <!-- رأس المستند -->
     <meta charset="UTF-8" /> <!-- ترميز UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- متجاوب -->
     <title>Form Document</title> <!-- عنوان التبويب -->
   </head>
-  <body>
+  <body> <!-- محتوى النموذج -->
     <!-- نموذج بـ post؛ action صفحة الاستقبال التجريبية -->
     <form action="proses.php" method="post">
       <input type="text" placeholder="Username" /> <!-- اسم مستخدم -->
@@ -40,6 +42,6 @@
       <input type="color" /> <!-- لون -->
       <br />
       <input type="time" /> <!-- وقت -->
-    </form>
-  </body>
-</html>
+    </form> <!-- نهاية form -->
+  </body> <!-- نهاية body -->
+</html> <!-- نهاية المستند -->

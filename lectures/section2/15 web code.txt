@@ -6,14 +6,16 @@
 الملفات: مجلد files/ يحتوي song.mp3 و yara.mp4 بجانب الصفحة.
 
 --------------------------------------------------------------------------------
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+<!-- ===== ملف: index.html ===== -->
+--------------------------------------------------------------------------------
+<!DOCTYPE html> <!-- HTML5 -->
+<html lang="en"> <!-- لغة الصفحة -->
+  <head> <!-- رأس المستند -->
+    <meta charset="UTF-8" /> <!-- ترميز -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- متجاوب -->
+    <title>Document</title> <!-- عنوان التبويب -->
   </head>
-  <body>
+  <body> <!-- وسائط الصوت والفيديو -->
     <h1>audio</h1> <!-- عنوان قسم الصوت -->
     <!-- audio: ملف صوتي؛ controls يظهر أزرار التشغيل للمستخدم -->
     <audio src="files/song.mp3" controls></audio>
@@ -30,5 +32,5 @@
     <br />
 
     <video src="files/yara.mp4" controls width="400" height="300"></video>
-  </body>
-</html>
+  </body> <!-- نهاية body -->
+</html> <!-- نهاية الصفحة -->

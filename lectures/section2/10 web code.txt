@@ -8,15 +8,16 @@
 --------------------------------------------------------------------------------
 ### الجزء الأول
 --------------------------------------------------------------------------------
+<!-- ===== ملف: index.html (أول مثال) ===== -->
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<!DOCTYPE html> <!-- HTML5 -->
+<html lang="en"> <!-- لغة الصفحة -->
+<head> <!-- رأس المستند -->
+    <meta charset="UTF-8"> <!-- UTF-8 للأحرف -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- متجاوب -->
+    <title>Document</title> <!-- عنوان التبويب العام -->
 </head>
-<body>
+<body> <!-- محتوى الصفحة -->
 
 <!--headings: مستويات العناوين من h1 إلى h6-->
 <h1>heading 1</h1>
@@ -59,23 +60,22 @@
 
 
     
-</body>
+</body> <!-- نهاية الصفحة -->
 </html>
 
 --------------------------------------------------------------------------------
 ### الجزء الثاني — span، صور، تمييز النص
 --------------------------------------------------------------------------------
+<!-- ===== ملف: index1.html (ثانٍ) ===== -->
 
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home page</title>
+<!DOCTYPE html> <!-- HTML5 -->
+<html lang="en"> <!-- لغة المستند -->
+<head> <!-- رأس الصفحة -->
+    <meta charset="UTF-8"> <!-- ترميز -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- جوال -->
+    <title>home page</title> <!-- عنوان أوضح -->
 </head>
-<body>
+<body> <!-- بداية الجسد -->
     <!-- span: جزء نصي داخل سطر دون كسر السطر -->
     <span>hello</span>
     <span>world</span>
@@ -100,5 +100,5 @@
     
 
     
-</body>
+</body> <!-- نهاية الجزء الثاني -->
 </html>

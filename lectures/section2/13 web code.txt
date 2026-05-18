@@ -5,15 +5,17 @@
 أين الكود: code/section2/web site 13/index.html
 
 --------------------------------------------------------------------------------
+<!-- ===== ملف: index.html ===== -->
+--------------------------------------------------------------------------------
 <!-- Lecture 13: HTML forms and input types — الشرح بالإنجليزية مع تعليق عربي موازٍ -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html> <!-- HTML5 -->
+<html lang="en"> <!-- لغة المستند -->
+<head> <!-- رأس الصفحة -->
+    <meta charset="UTF-8"> <!-- ترميز النصوص -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- متجاوب -->
     <title>Form Example</title> <!-- عنوان صفحة النموذج -->
 </head>
-<body>
+<body> <!-- النموذج والحقول داخل body -->
     <!-- النموذج يرسل البيانات للخادم عند الضغط على زر الإرسال -->
     <!-- action: الصفحة أو السكربت الذي يستقبل البيانات -->
     <!-- POST: إرسال البيانات في جسم الطلب وليس في شريط العنوان -->
@@ -56,6 +58,6 @@
         <br>
         <!-- زر عادي لا يرسل النموذج تلقائياً -->
         <input type="button" value="Click me">
-    </form>
-</body>
-</html>
+    </form> <!-- نهاية النموذج -->
+</body> <!-- نهاية الصفحة -->
+</html> <!-- نهاية المستند -->

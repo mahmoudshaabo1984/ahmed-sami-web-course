@@ -5,9 +5,11 @@
 أين الكود: code/section2/web site 18/blog1.html
 
 --------------------------------------------------------------------------------
-<!DOCTYPE html>
-<html lang="en">
-  <head>
+<!-- ===== ملف: blog1.html ===== -->
+--------------------------------------------------------------------------------
+<!DOCTYPE html> <!-- HTML5 -->
+<html lang="en"> <!-- لغة الصفحة -->
+  <head> <!-- التنسيقات الداخلية هنا -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mahmoud's Pro Blog</title>
@@ -31,9 +33,9 @@
         padding: 10px; /* حشو داخل القائمة */
         border-radius: 10px; /* زوايا دائرية لقائمة التنقل */
       }
-    </style>
-  </head>
-  <body>
+    </style> <!-- نهاية الأنماط -->
+  </head> <!-- نهاية head -->
+  <body> <!-- هيكل الصفحة الظاهر -->
     <nav> <!-- منطقة تنقل رئيسية -->
       <strong>Menu: </strong> <!-- تسمية بصرية للقائمة -->
       <a href="latest.html">Latest</a> | <a href="new.html">New</a> |
@@ -81,6 +83,6 @@
         <hr />
         <p>&copy; 2025 Mahmoud's Blog - All rights reserved.</p>
       </footer>
-    </main>
-  </body>
-</html>
+    </main> <!-- نهاية المحتوى الأساسي -->
+  </body> <!-- نهاية الصفحة -->
+</html> <!-- نهاية المستند -->

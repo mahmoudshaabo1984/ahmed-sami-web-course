@@ -23,8 +23,10 @@ The course is titled **Rock Foundation in the Web World** (صخرة الأساس
 The repository has three main folders.
 
 - The `code` folder holds the working websites I built during practice.
-- The `lectures` folder holds the code notes I took while watching each lecture.
+- The `lectures` folder holds **Arabic study notes** for each lesson: each `.txt` file is written as a **student reference** (`مرجع الطالب`) with goals, a pointer to the matching folder under `code/` (or `web code/` for teacher bundles), and **Arabic comments** beside important HTML and CSS lines so learners and screen reader users can follow the same code as in the video.
 - The `web code` folder holds the original course source files provided by the teacher.
+
+A local folder named **`اكواد قديمة/`** may exist on disk as an **offline backup** of older copies. It is listed in `.gitignore` and is **not** part of what is published on GitHub.
 
 ### What this repository contains
 
@@ -120,9 +122,12 @@ By the end of this course you will be able to:
 ## How to Use This Repository
 
 1. Download the repository to your computer.
-2. Open the folder you want to read in any code editor.
-3. Open the HTML file in your web browser to see the result.
+2. Open the matching **lecture** under `lectures/section1`, `lectures/section2`, or `lectures/section3` and read the intro block and inline comments (Arabic).
+3. Open the linked **practice project** under `code/` in your editor, then open the `index.html` (or the file named in the note) in a web browser to see the result.
+4. Optionally compare with the teacher’s originals under `web code/` when you need the exact course bundle.
 
 ## Accessibility Note
 
 This README uses simple English and a clear heading order. It works well with screen readers such as NVDA on Windows, VoiceOver on macOS and iOS, TalkBack on Android, and Orca on Linux.
+
+The **`lectures`** text files are also structured for learning with a screen reader: important lines are preceded or followed by **Arabic HTML/CSS comments** that describe what the next line does.

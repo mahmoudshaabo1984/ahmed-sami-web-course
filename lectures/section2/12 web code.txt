@@ -5,25 +5,23 @@
 أين الكود: code/section2/web site 12/index.html
 
 --------------------------------------------------------------------------------
+<!-- ===== ملف: index.html ===== -->
+--------------------------------------------------------------------------------
 
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html> <!-- إعلان HTML5 -->
+<html lang="en"> <!-- لغة الصفحة -->
+<head> <!-- معلومات الصفحة -->
+    <meta charset="UTF-8"> <!-- UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- متجاوب -->
     <title>Document</title> <!-- يُستحسن تغيير العنوان لوصف الصفحة -->
 </head>
-<body>
+<body> <!-- المحتوى المرئي -->
     <h1>users</h1> <!-- عنوان فوق الجدول -->
     <table> <!-- بداية الجدول -->
         <tr> <!-- صف: صف عناوين الأعمدة -->
             <th>name</th> <!-- عنوان العمود: الاسم -->
             <th>age</th> <!-- العمر -->
             <th>email</th> <!-- البريد -->
-            
 
         </tr>
         <tr> <!-- صف بيانات -->
@@ -43,11 +41,10 @@
             <td>nda</td>
             <td>35</td>
             <td>nda100100@gmail.com</td>
-            
 
         </tr>
 
     </table> <!-- نهاية الجدول -->
-    
-</body>
+
+</body> <!-- نهاية الصفحة -->
 </html>

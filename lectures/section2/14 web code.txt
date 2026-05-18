@@ -5,22 +5,22 @@
 أين الكود: code/section2/web site 14/index.html
 
 --------------------------------------------------------------------------------
+<!-- ===== ملف: index.html ===== -->
+--------------------------------------------------------------------------------
 
-
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+<!DOCTYPE html> <!-- HTML5 -->
+<html lang="en"> <!-- لغة الصفحة -->
+  <head> <!-- رأس المستند -->
+    <meta charset="UTF-8" /> <!-- ترميز -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- متجاوب -->
+    <title>Document</title> <!-- عنوان التبويب -->
   </head>
-  <body>
+  <body> <!-- محتوى يعرض الكيانات -->
     <!-- &lt; و &gt; يعرضان <div> كنص وليس كوسم -->
     &lt;div&gt; hello world &lt;/div&gt;
     <br /><br /><br /><br /> <!-- عدة أسطر فاصلة -->
     <!-- &nbsp; مسافة غير منكسرة؛ هنا عدة مسافات بين hello و world -->
     <h1>hello &nbsp; &nbsp; &nbsp; &nbsp;world</h1>
     
-  </body>
-</html>
+  </body> <!-- نهاية الصفحة -->
+</html> <!-- نهاية المستند -->
