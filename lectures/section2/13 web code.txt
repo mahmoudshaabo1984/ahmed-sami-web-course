@@ -1,52 +1,60 @@
-<!-- Lecture 13: HTML forms and input types -->
+================================================================================
+مرجع الطالب — المحاضرة 13: نماذج HTML forms والحقول
+================================================================================
+ما تتعلمه: form، action، method، أنواع input، select مع option فقط داخل select.
+أين الكود: code/section2/web site 13/index.html
+
+--------------------------------------------------------------------------------
+<!-- Lecture 13: HTML forms and input types — الشرح بالإنجليزية مع تعليق عربي موازٍ -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Example</title>
+    <title>Form Example</title> <!-- عنوان صفحة النموذج -->
 </head>
 <body>
-    <!-- A form sends user input to a server when the user clicks submit. -->
-    <!-- action is the page that will receive the data. method POST sends data hidden. -->
+    <!-- النموذج يرسل البيانات للخادم عند الضغط على زر الإرسال -->
+    <!-- action: الصفحة أو السكربت الذي يستقبل البيانات -->
+    <!-- POST: إرسال البيانات في جسم الطلب وليس في شريط العنوان -->
     <form action="process.php" method="POST">
-        <!-- text input for plain words -->
+        <!-- حقل نص عادي -->
         <input type="text" placeholder="user name">
-        <br>
+        <br> <!-- سطر جديد بصري -->
 
-        <!-- password input hides the typed letters -->
+        <!-- كلمة مرور: يخفي الأحرف -->
         <input type="password" placeholder="password">
         <br>
 
-        <!-- email input checks the value looks like an email address -->
+        <!-- بريد: المتصفح يتحقق شكلياً من صيغة البريد -->
         <input type="email" placeholder="email">
         <br>
 
-        <!-- date input shows a date picker -->
+        <!-- تاريخ: يظهر منتقي تاريخ إن دعم المتصفح -->
         <input type="date">
         <br>
 
-        <!-- Bug fix: select can only contain option tags. -->
-        <!-- Old code put inputs and br tags inside select. That is invalid HTML. -->
-        <!-- Bug fix: typo "femail" changed to "female". -->
-        <!-- Bug fix: option tags need visible text between the tags. -->
-        <select name="gender" id="gender">
-            <option value="male">Male</option>
-            <option value="female">Female</option>
+        <!-- إصلاح: داخل select يجب أن تكون option فقط (لا input داخله) -->
+        <!-- إصلاح: تصحيح أنثى female بدلاً من خطأ إملائي -->
+        <!-- إصلاح: كل option تحتاج نصاً ظاهراً بين الوسمين -->
+        <select name="gender" id="gender"> <!-- قائمة منسدلة -->
+            <option value="male">Male</option> <!-- خيار ذكر -->
+            <option value="female">Female</option> <!-- خيار أنثى -->
         </select>
         <br>
 
-        <!-- color input shows a color picker -->
+        <!-- لون: منتقي لون -->
         <input type="color">
         <br>
 
-        <!-- time input shows a time picker -->
+        <!-- وقت: منتقي وقت -->
         <input type="time">
         <br>
 
-        <!-- Bug fix: button label "sing" changed to "Sign in". -->
+        <!-- زر إرسال النموذج -->
         <input type="submit" value="Sign in">
         <br>
+        <!-- زر عادي لا يرسل النموذج تلقائياً -->
         <input type="button" value="Click me">
     </form>
 </body>

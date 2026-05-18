@@ -1,31 +1,35 @@
+================================================================================
+مرجع الطالب — المحاضرة 26: ألوان Hex ومختصرها
+================================================================================
+الهدف: فهم #RRGGBB (سداسي عشري) والاختصار #RGB عندما يتكرر كل رقمان.
+محددات مختلفة: .myclass و #myid و .p1 و .p2 لتمرين الأولوية البصرية.
+راجع مجلد الكود: code/section3/web site 26/
+
+--------------------------------------------------------------------------------
+<!-- ===== ملف: index.html ===== -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hex Colors Lesson</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Hex Colors Lesson</title> <!-- عنوان يصف محتوى الدرس -->
+    <link rel="stylesheet" href="style.css" /> <!-- كل الألوان في ملف خارجي -->
   </head>
   <body>
-    <h1 class="myclass">hello world</h1>
+    <h1 class="myclass">hello world</h1> <!-- سيصبح أحمر عبر .myclass -->
 
-    <h1 id="myid">welcome to my website</h1>
+    <h1 id="myid">welcome to my website</h1> <!-- سيصبح أخضر عبر #myid -->
 
-    <p class="p1">تجربة اللون الأزرق (Hex).</p>
-    <p class="p2">تجربة اللون الأسود (Hex).</p>
+    <p class="p1">تجربة اللون الأزرق (Hex).</p> <!-- .p1: أزرق عريض -->
+    <p class="p2">تجربة اللون الأسود (Hex).</p> <!-- .p2: أسود -->
   </body>
 </html>
 
-
-
-
-
-
-
+<!-- ===== ملف: style.css ===== -->
 /* 1. اللون الأحمر (Red) */
 /* القيمة الكاملة: ff للأحمر، 00 للأخضر، 00 للأزرق */
 .myclass {
-  color: #ff0000;
+  color: #ff0000; /* أحمر كامل */
   /* ملاحظة: يمكنك كتابتها باختصار: #f00 */
 }
 

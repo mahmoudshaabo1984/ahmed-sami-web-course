@@ -1,22 +1,33 @@
-<!-- Lecture 8: Full HTML page structure -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- The head holds info about the page. It is not shown on screen. -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- The title shows in the browser tab. -->
+================================================================================
+مرجع الطالب — المحاضرة 8: هيكل صفحة HTML كامل
+================================================================================
+ما تتعلمه: DOCTYPE, html, head (ميتا، عنوان التبويب), body (ما يراه المستخدم).
+أين الكود: code/section2/web site 8/index.html
+ملاحظة: الرابط يجب أن يكون https://www... وليس www فقط.
+
+--------------------------------------------------------------------------------
+الكود مع تعليق عربي على الأسطر المهمة:
+--------------------------------------------------------------------------------
+
+<!-- المحاضرة 8: هيكل صفحة كامل -->
+<!DOCTYPE html> <!-- إعلان نوع المستند: صفحة HTML5 -->
+<html lang="en"> <!-- جذر الصفحة؛ lang لغة المحتوى (للمساعدات وقارئ الشاشة) -->
+<head> <!-- رأس الصفحة: معلومات وروابط، لا يظهر كنص في الصفحة مباشرة -->
+    <!-- head يحتوي معلومات عن الصفحة وليس المحتوى المرئي بالكامل -->
+    <meta charset="UTF-8"> <!-- ترميز الأحرف لدعم العربية والرموز -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ملاءمة الشاشات الصغيرة -->
+    <!-- title يظهر في تبويب المتصفح -->
     <title>home page</title>
 </head>
-<body>
-    <!-- The body holds everything the user sees on the page. -->
-    <h1>hello world</h1>
+<body> <!-- كل ما يراه المستخدم في الصفحة -->
+    <!-- body يحوي المحتوى الظاهر -->
+    <h1>hello world</h1> <!-- عنوان رئيسي -->
 
-    <p>this is a test from home page</p>
-    <br>
+    <p>this is a test from home page</p> <!-- فقرة -->
+    <br> <!-- سطر فاصل بسيط -->
 
-    <!-- Bug fix: a link must have a full URL with https:// to work. -->
-    <!-- Old code was: <a href="www.google.com">google</a> which opens a wrong path. -->
+    <!-- رابط صحيح: عنوان كامل ببروتوكول https -->
+    <!-- الكود الخاطئ كان: href="www.google.com" فيفتح مساراً نسبياً خاطئاً -->
     <a href="https://www.google.com">google</a>
 </body>
 </html>

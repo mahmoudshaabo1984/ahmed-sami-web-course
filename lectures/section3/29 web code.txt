@@ -1,22 +1,28 @@
+================================================================================
+مرجع الطالب — المحاضرة 29: خلفية الصورة (background-image)
+================================================================================
+تعلم: ربط صورة بخلفية body، منع التكرار، cover، center، ولون احتياطي.
+مهم: مسار الصورة من ملف CSS نسبةً لموضع ملف CSS (مجلد files/).
+راجع: code/section3/web site 29/
+
+--------------------------------------------------------------------------------
+<!-- ===== ملف: index.html ===== -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Text Formatting Lesson</title>
+    <title>Text Formatting Lesson</title> <!-- عنوان عام؛ الدرس فعلياً عن الخلفية -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1 class="myclass">hello world</h1>
-    <h1 id="myid">welcome to my website</h1>
+    <h1 class="myclass">hello world</h1> <!-- خلفية ملونة للعنوان فقط -->
+    <h1 id="myid">welcome to my website</h1> <!-- شفافية على الخلفية -->
 
-    <p class="p1">هذا النص مثال على الخط العريض (Bold) والمحاذاة.</p>
+    <p class="p1">هذا النص مثال على الخط العريض (Bold) والمحاذاة.</p> <!-- مربع أبيض للوضوح -->
     <p class="p2">هذا النص مثال على الكلام المشطوب (Line-through).</p>
   </body>
 </html>
-
-
-
 
 /* تطبيق خصائص الخلفية على كامل الصفحة (body) 
    كما ظهر في الصور الأخيرة من المحاضرة

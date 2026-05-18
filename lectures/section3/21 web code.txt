@@ -1,9 +1,21 @@
-<!-- Lecture 21: CSS Priority (Specificity and Cascade) -->
-<!-- This lecture shows three ways to write CSS: external file, internal style, and inline. -->
-<!-- The browser uses an order to decide which one wins when they target the same tag. -->
-<!-- Order from weakest to strongest: external file, internal style, inline style. -->
+================================================================================
+مرجع الطالب — المحاضرة 21: أولوية CSS (تضارب external / internal / inline)
+================================================================================
+ما تتعلمه: عندما تستهدف عدة قواعد نفس العنصر، المتصفح يختار حسب القوة والترتيب.
+ترتيب الشدة هنا (من الأضعف للأقوى): ملف خارجي < داخل <style> < style على الوسم.
+النتيجة المتوقعة: h1 يظهر أصفر لأن inline يغلب الباقي.
+أين الكود: code/section3/web site 21/index.html و style.css
 
-<!-- ===== File: index.html ===== -->
+--------------------------------------------------------------------------------
+<!-- Lecture 21: CSS Priority (Specificity and Cascade) -->
+<!-- الشرح بالإنجليزية مع تعليق عربي موازٍ لقارئ الشاشة -->
+
+<!-- المحاضرة 21: أولوية CSS -->
+<!-- نعرض ثلاث طرق: ملف خارجي، style داخلي، وstyle على الوسم -->
+<!-- المتصفح يقرر أي قاعدة تفوز عند التصادم -->
+<!-- الترتيب من الأضعف للأقوى: external ثم internal ثم inline -->
+
+<!-- ===== ملف: index.html ===== -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,20 +23,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Priority Test</title>
 
-    <!-- 1. External CSS: linked from a separate file. Lowest priority here. -->
+    <!-- 1. External CSS: أقل أولوية في هذا المثال -->
     <link rel="stylesheet" href="style.css" />
 
-    <!-- 2. Internal CSS: written inside a style tag in the head. Beats external. -->
+    <!-- 2. Internal CSS: يغلب الملف الخارجي لنفس المحدد -->
     <style>
-      /* This rule says all h1 should be blue. */
+      /* جميع h1 زرقاء — تغلب اللون الأحمر من الملف الخارجي */
       /* It overrides the red rule from style.css because internal beats external. */
       h1 {
-        color: blue;
+        color: blue; /* لون أزرق من الداخل */
       }
     </style>
   </head>
   <body>
-    <!-- 3. Inline CSS: written in the style attribute on the tag itself. Highest priority. -->
+    <!-- 3. Inline CSS: أقوى أولوية — هذا h1 سيكون أصفر -->
     <!-- The h1 below will be yellow because inline beats both internal and external. -->
     <h1 style="color: yellow">hello world</h1>
 
@@ -32,15 +44,15 @@
   </body>
 </html>
 
-<!-- Bug fix: the CSS below used to be after </html> in the same file. -->
+<!-- إصلاح: CSS أدناه يجب أن يكون في style.css فقط وليس بعد </html> -->
 <!-- That is wrong. CSS in a .css file must live in its own file, not after the html. -->
-<!-- It is shown here as a separate block so the lecture stays in one note. -->
+<!-- نعرضه هنا ككتلة منفصلة ليبقى الدرس في ملف ملاحظات واحد -->
 
-<!-- ===== File: style.css ===== -->
-/* This is the external CSS file. */
+<!-- ===== ملف: style.css ===== -->
+/* ملف CSS خارجي */
 h1 {
-  /* This rule says h1 should be red. */
+  /* هذه القاعدة تجعل h1 أحمر إذا لم يوجد تنسيق أقوى */
   /* It only wins if there is no internal or inline rule on the same tag. */
-  /* In this lecture the result is yellow because inline beats everything. */
+  /* في هذا الدرس النتيجة صفراء لأن inline يغلب كل شيء */
   color: red;
 }

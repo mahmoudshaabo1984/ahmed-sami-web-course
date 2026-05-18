@@ -1,3 +1,10 @@
+================================================================================
+مرجع الطالب — المحاضرة 20 (الجزء 3): CSS خارجي External ملف .css منفصل
+================================================================================
+ما تتعلمه: ربط ملف style.css بـ <link rel="stylesheet">؛ أفضل ممارسة للفصل بين HTML وCSS.
+أين الكود: code/section3/web site 20/3_external.html و style.css (نفس المجلد)
+
+--------------------------------------------------------------------------------
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,7 +15,7 @@
     <link rel="stylesheet" href="style.css" /> <!-- ربط ملف CSS خارجي منفصل -->
   </head>
   <body>
-    <h1>hello world</h1>
+    <h1>hello world</h1> <!-- يُلون بالقاعدة في style.css -->
 
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing omnis.</p>
   </body>

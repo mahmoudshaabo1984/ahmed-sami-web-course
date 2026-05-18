@@ -1,3 +1,10 @@
+================================================================================
+مرجع الطالب — المحاضرة 18 (نسخة محسّنة): مدونة مع nav وحدود وخلفيات أوضح
+================================================================================
+ما تتعلمه: nav، main، article، وـ CSS يوضح الهوامش والحدود والألوان.
+أين الكود: code/section2/web site 18/blog1.html
+
+--------------------------------------------------------------------------------
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,39 +13,39 @@
     <title>Mahmoud's Pro Blog</title>
     <style>
       body {
-        margin: 0 15% 0 15%; /* وسعت الهوامش قليلاً */
+        margin: 0 15% 0 15%; /* وسعت الهوامش قليلاً — 15% يمين ويسار */
         border: 2px solid #333; /* جعلت الإطار خطاً متصلاً بدل المنقط ليكون أوضح */
         border-radius: 15px; /* حواف دائرية ناعمة للإطار */
-        padding: 20px;
-        font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
+        padding: 20px; /* حشو داخلي أكبر لراحة القراءة */
+        font-family: Arial, Helvetica, sans-serif; /* خط sans-serif واضح */
+        text-align: center; /* توسيط النصوص */
         background-color: #f9f9f9; /* لون خلفية هادئ جداً */
       }
       h3 {
         border-bottom: 2px solid #555; /* توضيح الخط تحت العناوين */
-        padding-bottom: 5px;
+        padding-bottom: 5px; /* مسافة بين النص والخط السفلي */
         color: #d32f2f; /* لون أحمر غامق للعناوين */
       }
       nav {
         background-color: #eee; /* خلفية رمادية للقائمة */
-        padding: 10px;
-        border-radius: 10px;
+        padding: 10px; /* حشو داخل القائمة */
+        border-radius: 10px; /* زوايا دائرية لقائمة التنقل */
       }
     </style>
   </head>
   <body>
-    <nav>
-      <strong>Menu: </strong>
+    <nav> <!-- منطقة تنقل رئيسية -->
+      <strong>Menu: </strong> <!-- تسمية بصرية للقائمة -->
       <a href="latest.html">Latest</a> | <a href="new.html">New</a> |
       <a href="contact.html">Contact</a>
     </nav>
 
-    <h1>My Professional Blog</h1>
+    <h1>My Professional Blog</h1> <!-- عنوان الصفحة -->
 
-    <main>
+    <main> <!-- المحتوى الأساسي -->
       <article>
         <h3>HTML Lesson</h3>
-        <small>Sep 25, 2018</small> @ <strong>Mahmoud</strong>
+        <small>Sep 25, 2018</small> @ <strong>Mahmoud</strong> <!-- تاريخ ومؤلف بخط عريض -->
         <p>
           HTML is the skeleton of the web. It is very easy to learn.
           <br />
@@ -47,7 +54,7 @@
             src="files/mahmoud.jpg"
             alt="Mahmoud's personal photo"
             width="150"
-          />
+          /> <!-- عرض الصورة بالبكسل -->
           <br />
           <br />
           <a href="#" target="_blank">Read Article...</a>
@@ -70,7 +77,7 @@
         </p>
       </article>
 
-      <footer>
+      <footer> <!-- تذييل داخل main -->
         <hr />
         <p>&copy; 2025 Mahmoud's Blog - All rights reserved.</p>
       </footer>

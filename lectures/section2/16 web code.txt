@@ -1,3 +1,11 @@
+================================================================================
+مرجع الطالب — المحاضرة 16: iframe — تضمين صفحات خارجية
+================================================================================
+ما تتعلمه: iframe ينسخ محتوى من موقع آخر داخل صفحتك (فيديو يوتيوب، ويكيبيديا).
+أين الكود: code/section2/web site 16/index.html
+ملاحظة accessibility: استخدم دائماً title على iframe يصف المحتوى.
+
+--------------------------------------------------------------------------------
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,23 +14,24 @@
     <title>Iframe Lesson</title>
   </head>
   <body>
-    <h2>1. YouTube Video</h2>
+    <h2>1. YouTube Video</h2> <!-- عنوان فرعي -->
+    <!-- iframe: إطار مضمن؛ src رابط التضمين من يوتيوب -->
     <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/uANa1UC5VrY"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
+      width="560" <!-- عرض الإطار بالبكسل -->
+      height="315" <!-- ارتفاع الإطار -->
+      src="https://www.youtube.com/embed/uANa1UC5VrY" <!-- رابط التضمين -->
+      title="YouTube video player" <!-- وصف لقارئ الشاشة -->
+      frameborder="0" <!-- سُميك حدود الإطار (قديم؛ غالباً يُستبدل بـ CSS) -->
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" <!-- صلاحيات المتصفح -->
+      allowfullscreen <!-- السماح بملء الشاشة -->
     >
     </iframe>
 
-    <br /><br />
+    <br /><br /> <!-- مسافة بصرية -->
 
     <h2>2. Wikipedia Page</h2>
     <iframe
-      src="https://www.wikipedia.org"
+      src="https://www.wikipedia.org" <!-- صفحة ويكيبيديا الرئيسية -->
       width="600"
       height="400"
       frameborder="1"

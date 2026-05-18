@@ -1,18 +1,27 @@
-<!-- Lecture 20: Inline CSS -->
-<!-- Inline CSS means writing the style right inside the tag using the style attribute. -->
-<!-- Use it only for small one-time styles. For real projects use external CSS. -->
-<!-- Bug fix: removed stray "sv" letters that were before <!DOCTYPE html>. -->
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inline CSS</title>
-  </head>
-  <body>
-    <!-- The style attribute holds CSS rules for this one tag. -->
-    <h1 style="color: red">hello world</h1>
+================================================================================
+مرجع الطالب — المحاضرة 20 (الجزء 1): CSS مضمّن Inline
+================================================================================
+ما تتعلمه: وضع التنسيق مباشرة في وسم HTML عبر السمة style="...".
+أين الكود: code/section3/web site 20/1_inline.html
+متى تستخدمه: لتجربة سريعة فقط؛ المشاريع الحقيقية تفضّل ملف CSS خارجي.
+ملاحظة: كان في نسخة قديمة حرف زائد قبل DOCTYPE — يجب أن يكون السطر <!DOCTYPE html> فقط.
 
-    <p>Lorem ipsum dolor sit amet, consectetur omnis.</p>
+--------------------------------------------------------------------------------
+<!-- Lecture 20: Inline CSS — معادلة عربية للملاحظات -->
+<!-- Inline CSS = كتابة التنسيق داخل الوسم باستخدام السمة style -->
+<!-- للأنماط الصغيرة مرة واحدة فقط؛ للمشاريع استخدم CSS خارجي -->
+<!-- إصلاح: إزالة أحرف زائدة كانت قبل <!DOCTYPE في نسخة التدريب -->
+<!DOCTYPE html> <!-- إعلان HTML5 -->
+<html lang="en"> <!-- لغة المستند -->
+  <head> <!-- رأس الصفحة -->
+    <meta charset="UTF-8" /> <!-- ترميز الأحرف -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- متجاوب -->
+    <title>Inline CSS</title> <!-- عنوان التبويب -->
+  </head>
+  <body> <!-- المحتوى المرئي -->
+    <!-- السمة style تحمل قواعد CSS لهذا الوسم فقط -->
+    <h1 style="color: red">hello world</h1> <!-- لون النص أحمر داخل هذا h1 فقط -->
+
+    <p>Lorem ipsum dolor sit amet, consectetur omnis.</p> <!-- فقرة عادية بدون تنسيق مضمّن -->
   </body>
 </html>

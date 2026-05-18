@@ -1,5 +1,16 @@
-الكود الأول 
-html
+================================================================================
+مرجع الطالب — المحاضرة 36: قوائم ul / ol وتنسيق القائمة (list-style، قائمة تنقّل)
+================================================================================
+الجزء الأول: تغيير شكل نقاط القائمة (مثل circle).
+الجزء الثاني: قائمة تنقّل أفقية بـ display: inline-block على عناصر li.
+ملاحظة تعليمية: وجود <label for="item2"> بدون حقل إدخال مرتبط به من الكود الأصلي؛
+الأفضل ربط label بعنصر له id نفسه أو استخدامها داخل نماذج — احتفظنا بالهيكل كما في الدرس.
+راجع: code/section3/web site 36/
+
+--------------------------------------------------------------------------------
+### الكود الأول — قائمة بسيطة
+
+<!-- ===== ملف: index.html ===== -->
 <!doctype html>
 <html lang="en">
   <head>
@@ -9,25 +20,23 @@ html
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <ul>
-      <li>item1</li>
+    <ul> <!-- قائمة غير مرقمة -->
+      <li>item1</li> <!-- عنصر قائمة -->
       <li>item3</li>
       <li>item5</li>
     </ul>
   </body>
 </html>
 
-
-
-الكود الاول 
-css
+/* ===== ملف: style.css ===== */
 ul {
   list-style-type: circle; /* شكل النقطة: دائرة فارغة */
 }
 
+--------------------------------------------------------------------------------
+### الكود الثاني — شريط تنقّل + قائمة مرقمة وقائمة متداخلة
 
-الكود الثاني 
-html
+<!-- ===== ملف: index.html ===== -->
 <!doctype html>
 <html lang="en">
   <head>
@@ -37,19 +46,20 @@ html
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <ul class="nav">
-      <li><a href="#">home</a></li>
+    <ul class="nav"> <!-- قائمة التنقل بفئة nav -->
+      <li><a href="#">home</a></li> <!-- # مكان رابط حقيقي لاحقاً -->
       <li><a href="#">contact</a></li>
       <li><a href="#">shop</a></li>
       <li><a href="#">about</a></li>
     </ul>
 
-    <h3>shop items</h3>
-    <ol class="shop-item">
+    <h3>shop items</h3> <!-- عنوان فرعي -->
+
+    <ol class="shop-item"> <!-- قائمة مرقمة -->
       <li>item1</li>
-      <label for="item2"></label>
+      <label for="item2"></label> <!-- من الدرس الأصلي: label فارغ غير مربوط -->
       <li>item3</li>
-      <ul>
+      <ul> <!-- قائمة فرعية داخل العنصر الرئيسي -->
         <li><a href="#">home</a></li>
         <li><a href="#">contact</a></li>
         <li><a href="#">shop</a></li>
@@ -61,8 +71,7 @@ html
   </body>
 </html>
 
-الكود الثاني 
-css
+/* ===== ملف: style.css ===== */
 /* قائمة التنقل الرئيسية */
 .nav {
   list-style-type: none; /* إخفاء النقاط */
@@ -85,14 +94,3 @@ css
   font-weight: bold; /* نص سميك */
   color: #fff; /* نص أبيض */
 }
-
-
-
-
-
-
-
-
-
-
-

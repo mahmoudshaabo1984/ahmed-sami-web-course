@@ -1,28 +1,31 @@
+================================================================================
+مرجع الطالب — المحاضرة 30: الهامش margin والحشو padding
+================================================================================
+الفكرة: margin مسافة خارج العنصر؛ padding مسافة داخل الحدود.
+الصورة: width/height ثابتان؛ الهامش يزحزح الصورة عن بقية الصفحة.
+راجع: code/section3/web site 30/ (main.css)
+
+--------------------------------------------------------------------------------
 <!-- قسم html — مثال الصفحة -->
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- مستند HTML5 -->
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" /> <!-- ترميز UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- للجوال -->
     <title>Padding and Margin Lesson</title>
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="main.css" /> <!-- التنسيق في ملف منفصل -->
   </head>
   <body>
-    <h1>heading1</h1>
+    <h1>heading1</h1> <!-- عنوان بخلفية وحشو من الأعلى في CSS -->
 
     <p>
       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
       Voluptatibus, repellat.
-    </p>
+    </p> <!-- فقرة نص تجريبية -->
 
-    <img src="files/mahmoud.jpg" alt="mahmoud" />
+    <img src="files/mahmoud.jpg" alt="mahmoud" /> <!-- صورة؛ المسار من مجلد المشروع -->
   </body>
 </html>
-
-
-
-
-
 
 /* قسم CSS — margin و padding */
 img {

@@ -1,15 +1,23 @@
+================================================================================
+مرجع الطالب — المحاضرة 9: العناوين h1–h6، div، ووسوم HTML5 الدلالية
+================================================================================
+ما تتعلمه: كل مستويات العناوين، الفقرة p، الرابط a، div، ثم main و section و aside.
+أين الكود: code/section2/web site 9/index.html
+ملاحظة: استخدم https:// مع روابط google و w3ee حتى تعمل كروابط خارجية.
+
+--------------------------------------------------------------------------------
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home page</title>
+    <meta charset="UTF-8"> <!-- ترميز النصوص -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- تخطيط الجوال -->
+    <title>home page</title> <!-- عنوان التبويب -->
 
 
 
 </head>
 <body>
-    <!--headings-->
+    <!--headings: عناوين من الأكبر h1 إلى الأصغر h6-->
     <h1>heading 1</h1>
     <h2>heading 2 </h2>
     <h3>heading 3</h3>
@@ -18,28 +26,30 @@
     <h6>heading 6</h6>
 
     <p>    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consequatur vitae nostrum molestiae consequuntur accusantium. Esse quaerat qui aspernatur praesentium, beatae adipisci delectus accusantium repellat incidunt, iure repudiandae temporibus possimus!10
-</p>
+</p> <!-- فقرة نصية طويلة للتجربة -->
+<!-- للإنتاج استخدم https:// -->
 <a href="www.google.com">google</a>
 
-<br>
-<div>this is a div</div>
+<br> <!-- فاصل سطر -->
+<div>this is a div</div> <!-- حاوية عامة بدون دلالة معنوية خاصة -->
 
 
-<!--html 5 tags-->
+<!--html 5 tags: وسوم دلالية لبنية الصفحة-->
 
-<main>this is a main</main>
+<main>this is a main</main> <!-- المحتوى الأساسي للصفحة -->
 
-<section>this  is a section</section>
+<section>this  is a section</section> <!-- قسم موضوعي -->
 
-<aside>this is a aside</aside>
+<aside>this is a aside</aside> <!-- جانبي أو معلومات ثانوية -->
 
-<!--semple section-->
+<!--semple section: قسم تجريبي (sample) -->
 <section>
-    <h3>HTML</h3>
+    <h3>HTML</h3> <!-- عنوان القسم -->
 
     <p>
-        this is HTML news
-        <br>
+        this is HTML news <!-- نص الخبر -->
+        <br> <!-- سطر جديد داخل الفقرة -->
+        <!-- رابط خارجي؛ يُفضّل https://www.w3ee.com -->
         <a href="www.w3ee.com">learn more</a>
         
     </p>

@@ -1,6 +1,16 @@
+================================================================================
+مرجع الطالب — المحاضرة 37: الطفو float ومعالجة انهيار الحاوية (overflow / clear)
+================================================================================
+المشكلة: عنصر float يخرج عن تدفق المحتوى فتنهار ارتفاع الحاوية أو يختلط الترتيب.
+الحلول الشائعة في الدرس:
+1) overflow: hidden على .container
+2) عنصر فاصل .cp { clear: both; }
+راجع: code/section3/web site 37/
 
-الكود الأول 
-html
+--------------------------------------------------------------------------------
+### الكود الأول — float بدون احتواء (السلوك «غير المثالي» تعليمياً)
+
+<!-- ===== ملف: index.html ===== -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,9 +20,9 @@ html
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>heading1</h1>
-      <h2>heading2</h2>
+    <div class="container"> <!-- حاوية المحتوى -->
+      <h1>heading1</h1> <!-- سيُطفو يميناً -->
+      <h2>heading2</h2> <!-- يتأثر بمحاذاة العناصر حول float -->
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam,
         blanditiis!
@@ -21,20 +31,18 @@ html
   </body>
 </html>
 
-
-
-الكود الأول 
-css
+/* ===== ملف: style.css (أول نسخة) ===== */
 .container {
+  /* فارغ هنا بقصده في الدرس: لا يحتوي float بالطريقة الحديثة */
 }
 .container h1 {
   float: right; /* h1 يطفو على اليمين */
 }
 
+--------------------------------------------------------------------------------
+### الكود الثاني — overflow: hidden يحتوي الطفو
 
-
-الكود الثاني 
-html
+<!-- ===== HTML: نفس البنية السابقة ===== -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -55,14 +63,7 @@ html
   </body>
 </html>
 
-
-
-
-
-
-
-الكود الثاني 
-css 
+/* ===== ملف: style.css ===== */
 .container {
   overflow: hidden; /* الحاوية تحتوي العناصر الطائرة تلقائياً */
 }
@@ -71,11 +72,10 @@ css
   float: right; /* h1 يطفو على اليمين */
 }
 
+--------------------------------------------------------------------------------
+### الكود الثالث — طريقة clear عبر عنصر فارغ .cp
 
-
-
-الكود الثالث والأخير الصحيح 
-html
+<!-- ===== ملف: index.html ===== -->
 <!doctype html>
 <html lang="en">
   <head>
@@ -92,13 +92,12 @@ html
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam,
         blanditiis!
       </p>
-      <div class="cp"></div>
+      <div class="cp"></div> <!-- فاصل يوقف تأثير float بعده -->
     </div>
   </body>
 </html>
 
-الكود الثالث والأخير الصحيح 
-css
+/* ===== ملف: style.css ===== */
 /* الطريقة الأولى: أضف هذا لـ .container بدلاً من .cp
    overflow: hidden;
 */
@@ -110,17 +109,5 @@ css
 
 /* الطريقة الثانية: يوقف تأثير float */
 .cp {
-  clear: both;
+  clear: both; /* لا يسمح للعناصر أن تلتف حول float من أي جهة */
 }
-
-
-
-
-
-
-
-
-
-
-
-

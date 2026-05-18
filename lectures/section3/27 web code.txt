@@ -1,3 +1,15 @@
+================================================================================
+مرجع الطالب — المحاضرة 27: حجم الخط + دمج مع Hex (جزآن في ملف واحد)
+================================================================================
+الجزء (أ): font-size على العناوين والفقرات مع ألوان Hex بسيطة.
+الجزء (ب): نفس الهيكل تقريباً مع تعديل أحجام الفقرات والألوان (تمرين إضافي).
+تذكّر: class تُكتب بنقطة في CSS، و id بـ #.
+راجع المجلد: code/section3/web site 27/
+
+--------------------------------------------------------------------------------
+### الجزء (أ) — font-size الأساسي
+
+<!-- ===== ملف: index.html (أ) ===== -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,18 +19,16 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1 class="myclass">hello world</h1>
+    <h1 class="myclass">hello world</h1> <!-- حجم ولون من .myclass -->
 
-    <h1 id="myid">welcome to my website</h1>
+    <h1 id="myid">welcome to my website</h1> <!-- حجم ولون من #myid -->
 
-    <p class="paragraph-text">Lorem ipsum dolor sit amet.</p>
+    <p class="paragraph-text">Lorem ipsum dolor sit amet.</p> <!-- فقرة بنمط موحّد -->
     <p class="paragraph-text">Lorem ipsum dolor sit amet.</p>
   </body>
 </html>
 
-
-
-
+<!-- ===== ملف: style.css (أ) ===== -->
 /* تكبير العنوان الأول */
 .myclass {
   color: #ff0000; /* أحمر (من الدرس السابق) */
@@ -44,10 +54,10 @@
   color: #333;
 }
 
+--------------------------------------------------------------------------------
+### الجزء (ب) — Hex + أحجام مختلفة للفقرات
 
-
-
-
+<!-- ===== ملف: index.html (ب) ===== -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -66,10 +76,7 @@
   </body>
 </html>
 
-
-
-
-
+<!-- ===== ملف: style.css (ب) ===== -->
 /* 1. العنوان الأول */
 .myclass {
   color: #ff0000; /* لون أحمر (Hex) */

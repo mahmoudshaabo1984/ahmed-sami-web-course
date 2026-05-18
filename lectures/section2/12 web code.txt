@@ -1,3 +1,10 @@
+================================================================================
+مرجع الطالب — المحاضرة 12: الجداول table, tr, th, td
+================================================================================
+ما تتعلمه: table هيكل الجدول، tr صف، th خلية عنوان، td خلية بيانات.
+أين الكود: code/section2/web site 12/index.html
+
+--------------------------------------------------------------------------------
 
 
 
@@ -7,32 +14,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document</title> <!-- يُستحسن تغيير العنوان لوصف الصفحة -->
 </head>
 <body>
-    <h1>users</h1>
-    <table>
-        <tr>
-            <th>name</th>
-            <th>age</th>
-            <th>email</th>
+    <h1>users</h1> <!-- عنوان فوق الجدول -->
+    <table> <!-- بداية الجدول -->
+        <tr> <!-- صف: صف عناوين الأعمدة -->
+            <th>name</th> <!-- عنوان العمود: الاسم -->
+            <th>age</th> <!-- العمر -->
+            <th>email</th> <!-- البريد -->
             
 
         </tr>
-        <tr>
-            <td>ahmed</td>
-            <td>30</td>
-            <td>ahmedthebest@gmail.com</td>
+        <tr> <!-- صف بيانات -->
+            <td>ahmed</td> <!-- خلية: اسم -->
+            <td>30</td> <!-- عمر -->
+            <td>ahmedthebest@gmail.com</td> <!-- بريد -->
 
         </tr>
-        <tr>
+        <tr> <!-- صف ثان -->
             <td>sara</td>
             <td>25</td>
             <td>sarasami@gmail.com</td>
 
         </tr>
 
-        <tr>
+        <tr> <!-- صف ثالث -->
             <td>nda</td>
             <td>35</td>
             <td>nda100100@gmail.com</td>
@@ -40,7 +47,7 @@
 
         </tr>
 
-    </table>
+    </table> <!-- نهاية الجدول -->
     
 </body>
 </html>

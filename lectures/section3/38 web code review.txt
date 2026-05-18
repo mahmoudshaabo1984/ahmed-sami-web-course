@@ -3,6 +3,13 @@
 ملف: web site 38 review
 ============================================================
 
+--------------------------------------------------------------------------------
+كيف تستخدم هذه الملاحظات
+--------------------------------------------------------------------------------
+• هذا مثال «صفحة كاملة» تجمع: header مع قائمة، قسم عرض (show-case)، main، footer.
+• ربط التنسيق: ملف main.css مع صورة bg.jpg في نفس المجلد (مسار url في header).
+• ملاحظة: text-decoration على <li> لا يزيل تسطير الرابط؛ إزالة الخط السفلي تُطبَّق على a { text-decoration: none; } — الكود هنا كما في الدرس الأصلي.
+• جرّب تغيير الألوان والـ padding لترى تأثيرها على الواجهة بالكامل.
 
 ------------------------------------------------------------
 index.html
@@ -17,24 +24,24 @@ index.html
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#">home</a></li>
+    <header> <!-- شريط علوي؛ يمكن أن يحتوي شعاراً لاحقاً -->
+      <nav> <!-- عنصر تنقل دلالي لقارئ الشاشة -->
+        <ul> <!-- قائمة روابط بدون نقاط (تُخفي في CSS) -->
+          <li><a href="#">home</a></li> <!-- # مؤقت حتى تضع روابط حقيقية -->
           <li><a href="#">about</a></li>
           <li><a href="#">articles</a></li>
           <li><a href="#">contact</a></li>
         </ul>
       </nav>
     </header>
-    <section class="show-case">
+    <section class="show-case"> <!-- قسم ترحيبي بخلفية زرقاء في CSS -->
       <h1>welcome</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt sit
         cumque harum, unde esse aperiam at magnam saepe perferendis nobis!
       </p>
     </section>
-    <main>
+    <main> <!-- المحتوى الرئيسي للصفحة -->
       <h3>content</h3>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. At quisquam
@@ -47,9 +54,9 @@ index.html
         <li>css</li>
         <li>javascript</li>
         <li>node js</li>
-      </ol>
+      </ol> <!-- قائمة مرقمة لخطوات تعلمية -->
     </main>
-    <footer>&copy; 2020 dd inc</footer>
+    <footer>&copy; 2020 dd inc</footer> <!-- تذييل مع حقوق -->
   </body>
 </html>
 

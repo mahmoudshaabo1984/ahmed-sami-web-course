@@ -1,36 +1,45 @@
+================================================================================
+مرجع الطالب — المحاضرة 13 (تمرين مختصر): نفس فكرة النموذج بصيغة مضغوطة
+================================================================================
+ما تتعلمه: نفس عناصر النموذج بترميز XHTML-style ( /> على العناصر الفارغة).
+أين الكود: code/section2/web site 13/test.html
+ملاحظة: proses.php — اسم ملف تجريبي؛ قد يكون المقصود process.
+
+--------------------------------------------------------------------------------
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form Document</title>
+    <meta charset="UTF-8" /> <!-- ترميز UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- متجاوب -->
+    <title>Form Document</title> <!-- عنوان التبويب -->
   </head>
   <body>
+    <!-- نموذج بـ post؛ action صفحة الاستقبال التجريبية -->
     <form action="proses.php" method="post">
-      <input type="text" placeholder="Username" />
+      <input type="text" placeholder="Username" /> <!-- اسم مستخدم -->
       <br />
-      <input type="password" placeholder="Password" />
+      <input type="password" placeholder="Password" /> <!-- كلمة مرور -->
       <br />
-      <input type="email" placeholder="Email" />
+      <input type="email" placeholder="Email" /> <!-- بريد -->
       <br />
-      <input type="date" />
+      <input type="date" /> <!-- تاريخ -->
       <br />
 
-      <select name="gender">
+      <select name="gender"> <!-- اختيار الجنس -->
         <option value="male">Male</option>
         <option value="female">Female</option>
       </select>
       <br />
 
-      <input type="submit" value="Sign In" />
+      <input type="submit" value="Sign In" /> <!-- إرسال -->
       <br />
 
-      <input type="button" value="Click Me" />
+      <input type="button" value="Click Me" /> <!-- زر بدون إرسال -->
       <br />
 
-      <input type="color" />
+      <input type="color" /> <!-- لون -->
       <br />
-      <input type="time" />
+      <input type="time" /> <!-- وقت -->
     </form>
   </body>
 </html>

@@ -1,3 +1,14 @@
+================================================================================
+مرجع الطالب — المحاضرة 28: تنسيق النص (Typography والزخرفة)
+================================================================================
+الجزء الأول: text-transform، text-decoration، letter-spacing، محاذاة، اتجاه RTL للعربية.
+الجزء الثاني: تطبيق متسلسل (محاذاة ثم زخرفة ثم تحويل حروف ثم خط).
+ملفات المرجع: style.css و style1.css في code/section3/web site 28/
+
+--------------------------------------------------------------------------------
+### الجزء الأول — درس النصوص والعربية
+
+<!-- ===== ملف: index.html ===== -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,15 +18,13 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1 class="myclass">hello world</h1>
-    <h1 id="myid">welcome to my website</h1>
+    <h1 class="myclass">hello world</h1> <!-- عنوان بلون وزخرفة وسطر تحت -->
+    <h1 id="myid">welcome to my website</h1> <!-- عنوان بأسلوب مختلف (مائل، خط فوق) -->
 
-    <p class="p1">هذا النص مثال على الخط العريض (Bold) والمحاذاة.</p>
+    <p class="p1">هذا النص مثال على الخط العريض (Bold) والمحاذاة.</p> <!-- عربي RTL -->
     <p class="p2">هذا النص مثال على الكلام المشطوب (Line-through).</p>
   </body>
 </html>
-
-
 
 /* --- إعدادات الصفحة العامة --- */
 body {
@@ -62,11 +71,10 @@ body {
   text-align: center; /* محاذاة النص في الوسط */
 }
 
+--------------------------------------------------------------------------------
+### الجزء الثاني — تطبيق مرحلي (ملف style1.css)
 
-
-
-
-
+<!-- ===== ملف: index.html (تطبيق) ===== -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -74,17 +82,14 @@ body {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>تطبيق المحاضرة 28</title>
 
-    <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" href="style1.css" /> <!-- ملف تنسيق منفصل للتجربة -->
   </head>
   <body>
-    <h1 class="myclass">heading 1</h1>
+    <h1 class="myclass">heading 1</h1> <!-- نفس الفئة، ملف CSS مختلف -->
 
-    <p>هذا النص تجريبي لنرى الفرق بين العنوان والنصوص العادية.</p>
+    <p>هذا النص تجريبي لنرى الفرق بين العنوان والنصوص العادية.</p> <!-- نص عادي بدون class -->
   </body>
 </html>
-
-
-
 
 /* تنسيق عام للصفحة لكي يكون الشكل مرتباً */
 body {

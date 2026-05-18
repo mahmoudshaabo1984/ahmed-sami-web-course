@@ -1,3 +1,11 @@
+================================================================================
+مرجع الطالب — المحاضرة 15: صوت audio وفيديو video
+================================================================================
+ما تتعلمه: وسوم <audio> و <video> مع src و attributes مثل controls والأبعاد.
+أين الكود: code/section2/web site 15/index.html
+الملفات: مجلد files/ يحتوي song.mp3 و yara.mp4 بجانب الصفحة.
+
+--------------------------------------------------------------------------------
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,14 +14,16 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>audio</h1>
+    <h1>audio</h1> <!-- عنوان قسم الصوت -->
+    <!-- audio: ملف صوتي؛ controls يظهر أزرار التشغيل للمستخدم -->
     <audio src="files/song.mp3" controls></audio>
     <br />
-    <audio src="files/song.mp3" controls></audio>
+    <audio src="files/song.mp3" controls></audio> <!-- تكرار للتدريب -->
     <br />
 
-    <h1>video</h1>
+    <h1>video</h1> <!-- عنوان قسم الفيديو -->
 
+    <!-- video: ملف فيديو؛ width و height أبعاد العرض -->
     <video src="files/yara.mp4" controls width="400" height="300"></video>
 
     <br />

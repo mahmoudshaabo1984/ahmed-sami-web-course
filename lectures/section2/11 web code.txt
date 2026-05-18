@@ -1,15 +1,24 @@
+================================================================================
+مرجع الطالب — المحاضرة 11: القوائم ul و ol وقوائم التنقل
+================================================================================
+ما تتعلمه: قائمة غير مرتبة ul، قائمة مرتبة ol، ودمج روابط داخل li.
+أين الكود: code/section2/web site 11/index.html
+ملاحظة: روابط about.html تحتاج أن تكون الملفات موجودة بجانب index.html.
+
+--------------------------------------------------------------------------------
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home page</title>
+<!DOCTYPE html> <!-- بداية مستند HTML5 -->
+<html lang="en"> <!-- لغة الصفحة -->
+<head> <!-- معلومات الرأس -->
+    <meta charset="UTF-8"> <!-- ترميز UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- عرض متجاوب -->
+    <title>home page</title> <!-- عنوان التبويب -->
 </head>
-<body>
+<body> <!-- محتوى الصفحة -->
+    <!-- قائمة غير مرتبة: نقاط -->
     <ul>
-        <li>list item</li>
+        <li>list item</li> <!-- عنصر قائمة -->
         <li>list item</li>
         <li>list item</li>
         <li>list item</li>
@@ -17,6 +26,7 @@
     </ul>
 
 
+        <!-- قائمة مرتبة: أرقام تلقائية -->
         <ol>
         <li>list item</li>
         <li>list item</li>
@@ -26,11 +36,11 @@
         </ol>
 
 
+<!-- قائمة تنقل: كل عنصر يحتوي رابطاً -->
 <ul>
-    <li><a href="about.html">about</a></li>
-    <li><a href="contact.html">contact</a></li>
-    <li><a href="store.html">store</a></li>
-
+    <li><a href="about.html">about</a></li> <!-- رابط لصفحة about -->
+    <li><a href="contact.html">contact</a></li> <!-- رابط لصفحة اتصال -->
+    <li><a href="store.html">store</a></li> <!-- رابط لصفحة متجر -->
 </ul>
 
 

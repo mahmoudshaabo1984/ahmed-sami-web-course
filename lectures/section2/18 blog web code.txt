@@ -1,45 +1,55 @@
+================================================================================
+مرجع الطالب — المحاضرة 18: مشروع مدونة (article, section, hr, CSS داخلي)
+================================================================================
+ما تتعلمه: بنية مدونة بسيطة، مقالات article، فواصل hr، وـ CSS في <style>.
+أين الكود: code/section2/web site 18/blog.html
+الصور: files/mahmoud.jpg بجانب الصفحة.
+
+--------------------------------------------------------------------------------
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Blog</title>
+    <meta charset="UTF-8" /> <!-- ترميز النصوص -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- شاشات صغيرة -->
+    <title>My Blog</title> <!-- عنوان التبويب -->
     <style>
+      /* تنسيق الصفحة ككل */
       body {
-        margin: 0 20% 0 20%;
-        border: 2px dotted black;
-        padding: 5px;
-        font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
+        margin: 0 20% 0 20%; /* هوامش يمين ويسار 20% لتضييق المحتوى */
+        border: 2px dotted black; /* إطار منقط حول الصفحة */
+        padding: 5px; /* حشو داخلي بسيط */
+        font-family: Arial, Helvetica, sans-serif; /* عائلة الخط */
+        text-align: center; /* توسيط النصوص */
       }
       h3 {
         /* خط رمادي تحت عناوين المقالات */
-        border-bottom: 1px solid #777;
+        border-bottom: 1px solid #777; /* خط سفلي رفيع بلون رمادي */
       }
     </style>
   </head>
   <body>
+    <!-- قائمة تنقل بسيطة -->
     <ul>
-      <li><a href="latest.html">latest</a></li>
+      <li><a href="latest.html">latest</a></li> <!-- رابط (صفحات قد تحتاج إنشاءها) -->
       <li><a href="new.html">new</a></li>
       <li><a href="contact.html">contact</a></li>
     </ul>
-    <h1>my blog</h1>
-    <section>
-      <article>
-        <h3>HTML</h3>
+    <h1>my blog</h1> <!-- عنوان المدونة -->
+    <section> <!-- قسم يضم المقالات -->
+      <article> <!-- مقال مستقل دلالياً -->
+        <h3>HTML</h3> <!-- عنوان المقال -->
 
-        <small>Sep 25, 2018</small> @ <em>mahmoud</em>
+        <small>Sep 25, 2018</small> @ <em>mahmoud</em> <!-- تاريخ بخط صغير ومؤلف بخط مائل -->
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus
           maiores
+          <br /> <!-- فاصل سطر داخل الفقرة -->
+          <img src="files/mahmoud.jpg" alt="blog image" /> <!-- صورة مع وصف بديل -->
           <br />
-          <img src="files/mahmoud.jpg" alt="blog image" />
-          <br />
-          <a href="#" target="_blank">learn more...</a>
+          <a href="#" target="_blank">learn more...</a> <!-- رابط فتح في تبويب جديد -->
         </p>
       </article>
-      <hr />
+      <hr /> <!-- خط أفقي يفصل المقالات -->
       <article>
         <h3>CSS</h3>
         <small>Sep 26, 2018</small> @ <em>sara</em>
@@ -63,7 +73,7 @@
           <a href="#" target="_blank">learn more...</a>
         </p>
       </article>
-      <footer>&copy; 2018 my blog</footer>
+      <footer>&copy; 2018 my blog</footer> <!-- تذييل وحقوق -->
     </section>
   </body>
 </html>

@@ -1,9 +1,16 @@
+================================================================================
+مرجع الطالب — المحاضرة 20 (الجزء 2): CSS داخلي Internal في <head>
+================================================================================
+ما تتعلمه: كتابة قواعد CSS داخل وسم <style> داخل head؛ تنطبق على كل الصفحة.
+أين الكود: code/section3/web site 20/2_internal.html
+
+--------------------------------------------------------------------------------
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Internal CSS</title>
+    <title>Internal CSS</title> <!-- عنوان يصف نوع الدرس -->
 
     <style>
       /* CSS داخلي: يُكتب داخل وسم style في head */
@@ -13,8 +20,8 @@
     </style>
   </head>
   <body>
-    <h1>hello world</h1>
+    <h1>hello world</h1> <!-- سيأخذ لوناً أحمر من قاعدة h1 أعلاه -->
 
-    <p>Lorem ipsum dolor sit amet, consectetur omnis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur omnis.</p> <!-- فقرة بدون قاعدة خاصة هنا -->
   </body>
 </html>

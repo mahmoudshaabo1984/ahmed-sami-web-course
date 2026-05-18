@@ -1,21 +1,28 @@
+================================================================================
+مرجع الطالب — المحاضرة 22: محددات class و id في CSS
+================================================================================
+ما تتعلمه: class تُكرر على عدة عناصر؛ id يُفترض أن يكون فريداً في الصفحة.
+الأكواد: .اسم للفئة و #اسم للمعرف.
+أين الكود: code/section3/web site 22/index.html و style.css
+
+--------------------------------------------------------------------------------
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home page</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" /> <!-- ربط ملف الأنماط -->
   </head>
   <body>
-    <h1 class="myclass">hello world</h1>
+    <h1 class="myclass">hello world</h1> <!-- h1 بلون من .myclass -->
 
-    <h1 id="myid">welcome to my website</h1>
+    <h1 id="myid">welcome to my website</h1> <!-- h1 بلون من #myid -->
 
     <p>Lorem ipsum dolor sit amet.</p>
     <p>Lorem ipsum dolor sit amet.</p>
   </body>
 </html>
-
 
 
 
@@ -30,7 +37,6 @@
 #myid {
   color: yellow; /* لون النص أصفر للعنصر ذي id=myid */
 }
-
 
 
 

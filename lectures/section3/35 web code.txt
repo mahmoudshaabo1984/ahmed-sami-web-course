@@ -1,4 +1,15 @@
-html
+================================================================================
+مرجع الطالب — المحاضرة 35: خاصية display (block / inline / inline-block)
+================================================================================
+مفاهيم سريعة:
+- block: يأخذ سطراً كاملاً (مثل h1 افتراضياً).
+- inline: يصطف في السطر لكن صعب التحكم بالأبعاد.
+- inline-block: يصطف ويقبل width و height (مفيد لصور متجاورة).
+تجربة: حوّل h1 إلى inline لترى العناوين بجانب بعضها.
+راجع: code/section3/web site 35/
+
+--------------------------------------------------------------------------------
+<!-- ===== ملف: index.html ===== -->
 <!doctype html>
 <html lang="en">
   <head>
@@ -8,24 +19,22 @@ html
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>heading1</h1>
+    <h1>heading1</h1> <!-- افتراضياً block؛ CSS يغيّرها إلى inline -->
     <h1>heading1</h1>
     <h1>heading1</h1>
 
-    <span> span 1</span>
+    <span> span 1</span> <!-- span أصلاً inline -->
     <span> span 1</span>
     <span> span 1</span>
 
-    <img src="bg.jpg" alt="bg" />
+    <img src="bg.jpg" alt="bg" /> <!-- صورة؛ جرّب تغيير display -->
     <img src="bg.jpg" alt="bg" />
     <img src="bg.jpg" alt="bg" />
   </body>
 </html>
 
-
-
-
-css
+--------------------------------------------------------------------------------
+<!-- ===== ملف: style.css ===== -->
 /* h1 عنصر block: يأخذ سطراً كاملاً */
 h1 {
   display: inline; /* تحويله إلى inline ليصطف مع غيره */
@@ -37,9 +46,3 @@ img {
   height: 100px;         /* الارتفاع */
   display: inline-block; /* جرب: block / inline / none */
 }
-
-
-
-
-
-
