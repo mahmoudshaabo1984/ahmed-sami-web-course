@@ -1,7 +1,12 @@
+================================================================================
+المحاضرة 20 — CSS مضمّن (Inline): الخاصية style على الوسم
+المجلد: code/section3/web site 20/1_inline.html
+================================================================================
+
 <!-- Lecture 20: Inline CSS -->
 <!-- Inline CSS means writing the style right inside the tag using the style attribute. -->
 <!-- Use it only for small one-time styles. For real projects use external CSS. -->
-<!-- Bug fix: removed stray "sv" letters that were before <!DOCTYPE html>. -->
+<!-- Bug fix: removed stray letters that were before <!DOCTYPE html> in the practice copy. -->
 <!DOCTYPE html>
 <html lang="en">
   <head>

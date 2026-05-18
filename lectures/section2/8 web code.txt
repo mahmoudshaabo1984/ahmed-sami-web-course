@@ -1,0 +1,26 @@
+================================================================================
+المحاضرة 8 — هيكل صفحة HTML كامل (DOCTYPE, html, head, body)
+المجلد في المستودع: code/section2/web site 8/index.html
+================================================================================
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- The head holds info about the page. It is not shown on screen. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The title shows in the browser tab. -->
+    <title>home page</title>
+</head>
+<body>
+    <!-- The body holds everything the user sees on the page. -->
+    <h1>hello world</h1>
+
+    <p>this is a test from home page</p>
+    <br>
+
+    <!-- Bug fix: a link must have a full URL with https:// to work. -->
+    <!-- Old code was: <a href="www.google.com">google</a> which opens a wrong path. -->
+    <a href="https://www.google.com">google</a>
+</body>
+</html>

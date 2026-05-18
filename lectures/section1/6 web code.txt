@@ -1,5 +1,9 @@
+================================================================================
+المحاضرة 6 — مثال على عناوين وروابط (واجب من المحاضرة)
+الملف في المستودع: code/section1/6.html و code/section1/6 homework.html
+================================================================================
 
-<h1> ahmed sami </h1>
-<h2> age 30 </h2>
-<h3> cairo </h3>
-<a href=www.youtube.com/ahmedsami31> youtube </a>
+<h1>ahmed sami</h1>
+<h2>age 30</h2>
+<h3>cairo</h3>
+<a href="https://www.youtube.com/ahmedsami31">youtube</a>

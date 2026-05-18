@@ -1,3 +1,12 @@
+================================================================================
+المحاضرة 28 — تنسيق النص (زخرفة، اتجاه، خط) + تمرين style1.css
+المجلد: code/section3/web site 28/
+================================================================================
+
+--------------------------------------------------------------------------------
+الجزء أ — تنسيق متقدم للنص (index.html + style.css)
+--------------------------------------------------------------------------------
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,57 +24,50 @@
   </body>
 </html>
 
-
-
-/* --- إعدادات الصفحة العامة --- */
+/* style.css — الجزء أ */
 body {
-  background-color: #f4f4f4; /* لون خلفية الصفحة رمادي فاتح */
-  font-family: Arial, sans-serif; /* نوع الخط المستخدم في الصفحة هو Arial */
-  padding: 20px; /* إضافة مسافة داخلية حول محتوى الصفحة */
-  text-align: center; /* جعل كل النصوص في وسط الصفحة */
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  text-align: center;
 }
 
-/* --- 1. تنسيق العنوان الأول (.myclass) --- */
 .myclass {
-  color: #e74c3c; /* لون النص أحمر */
-  text-transform: uppercase; /* تحويل كل الحروف الإنجليزية إلى حروف كبيرة */
-  text-decoration: underline; /* وضع خط مستقيم تحت الكلام */
-  font-family: Impact, sans-serif; /* تغيير نوع الخط إلى Impact (خط سميك وقوي) */
-  letter-spacing: 2px; /* إضافة مسافة صغيرة بين كل حرف والآخر */
+  color: #e74c3c;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-family: Impact, sans-serif;
+  letter-spacing: 2px;
 }
 
-/* --- 2. تنسيق العنوان الثاني (#myid) --- */
 #myid {
-  color: #2980b9; /* لون النص أزرق */
-  text-transform: capitalize; /* جعل الحرف الأول من كل كلمة كبيراً وباقي الحروف صغيرة */
-  font-style: italic; /* جعل الخط مائلاً */
-  text-decoration: overline wavy; /* رسم خط متموج فوق الكلام */
-  text-decoration-color: #333; /* لون الخط المتموج رمادي غامق */
+  color: #2980b9;
+  text-transform: capitalize;
+  font-style: italic;
+  text-decoration: overline wavy;
+  text-decoration-color: #333;
 }
 
-/* --- 3. تنسيق الفقرة العربية الأولى (.p1) --- */
 .p1 {
-  color: darkblue; /* لون النص أزرق غامق */
-  font-size: 24px; /* حجم الخط كبير (24 بكسل) */
-  font-weight: bold; /* جعل الخط سميكاً وعريضاً (Bold) */
-  text-align: right; /* محاذاة النص لجهة اليمين */
-  direction: rtl; /* ضبط اتجاه الكتابة من اليمين لليسار (مهم للعربية) */
-  border: 1px dashed blue; /* وضع إطار متقطع (Dashed) باللون الأزرق حول النص */
-  padding: 10px; /* إضافة مسافة بين النص والإطار */
+  color: darkblue;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: right;
+  direction: rtl;
+  border: 1px dashed blue;
+  padding: 10px;
 }
 
-/* --- 4. تنسيق الفقرة العربية الثانية (.p2) --- */
 .p2 {
-  color: #333; /* لون النص رمادي غامق */
-  font-size: 22px; /* حجم الخط متوسط (22 بكسل) */
-  text-decoration: line-through; /* رسم خط في منتصف الكلام (كأنه مشطوب عليه) */
-  text-align: center; /* محاذاة النص في الوسط */
+  color: #333;
+  font-size: 22px;
+  text-decoration: line-through;
+  text-align: center;
 }
 
-
-
-
-
+--------------------------------------------------------------------------------
+الجزء ب — مثال بملف style1.css (خط مزدوج، تحويل لأحرف كبيرة، إلخ)
+--------------------------------------------------------------------------------
 
 <!DOCTYPE html>
 <html lang="en">
@@ -73,7 +75,6 @@ body {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>تطبيق المحاضرة 28</title>
-
     <link rel="stylesheet" href="style1.css" />
   </head>
   <body>
@@ -83,33 +84,20 @@ body {
   </body>
 </html>
 
-
-
-
-/* تنسيق عام للصفحة لكي يكون الشكل مرتباً */
+/* style1.css — الجزء ب */
 body {
-  background-color: #f9f9f9; /* خلفية فاتحة جداً */
+  background-color: #f9f9f9;
   padding: 50px;
 }
 
-/* --- تطبيق خطوات الأستاذ بالترتيب --- */
 .myclass {
-  /* 1. أولاً: حدد المكان (Alignment) */
   text-align: center;
-
-  /* 2. ثانياً: اختر شكل الخطوط الزخرفية (Decoration) */
-  text-decoration: double; /* خط مزدوج تحت الكلام */
-  text-decoration-color: red; /* (إضافة مني) لون الخط أحمر ليكون واضحاً */
-
-  /* 3. ثالثاً: حول الحروف لكبيرة (Transformation) */
+  text-decoration: double underline;
+  text-decoration-color: red;
   text-transform: uppercase;
-
-  /* 4. رابعاً: حدد نوع وحجم وشكل الخط (Typography) */
   font-family: Impact, sans-serif;
   font-size: 50px;
   font-style: italic;
   font-weight: bold;
-
-  /* لون النص */
   color: #333;
 }

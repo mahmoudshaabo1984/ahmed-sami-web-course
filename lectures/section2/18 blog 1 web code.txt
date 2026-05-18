@@ -1,3 +1,8 @@
+================================================================================
+المحاضرة 18 — مشروع مدونة (نسخة محسّنة مع nav و CSS إضافي)
+المجلد: code/section2/web site 18/blog1.html
+================================================================================
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,21 +11,21 @@
     <title>Mahmoud's Pro Blog</title>
     <style>
       body {
-        margin: 0 15% 0 15%; /* وسعت الهوامش قليلاً */
-        border: 2px solid #333; /* جعلت الإطار خطاً متصلاً بدل المنقط ليكون أوضح */
-        border-radius: 15px; /* حواف دائرية ناعمة للإطار */
+        margin: 0 15% 0 15%;
+        border: 2px solid #333;
+        border-radius: 15px;
         padding: 20px;
         font-family: Arial, Helvetica, sans-serif;
         text-align: center;
-        background-color: #f9f9f9; /* لون خلفية هادئ جداً */
+        background-color: #f9f9f9;
       }
       h3 {
-        border-bottom: 2px solid #555; /* توضيح الخط تحت العناوين */
+        border-bottom: 2px solid #555;
         padding-bottom: 5px;
-        color: #d32f2f; /* لون أحمر غامق للعناوين */
+        color: #d32f2f;
       }
       nav {
-        background-color: #eee; /* خلفية رمادية للقائمة */
+        background-color: #eee;
         padding: 10px;
         border-radius: 10px;
       }

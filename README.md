@@ -16,7 +16,7 @@ The course is titled **Rock Foundation in the Web World** (صخرة الأساس
 - Course link: [Rock Foundation in the Web World on Udemy](https://www.udemy.com/course/rockforweb/)
 - Course rating: 4.8 out of 5
 - Course language: Arabic
-- Total length: 8 hours 55 minutes across 55 lectures
+- Total length (full Udemy course): 8 hours 55 minutes across **55 lectures**
 
 ## Repository Structure
 
@@ -26,17 +26,24 @@ The repository has three main folders.
 - The `lectures` folder holds the code notes I took while watching each lecture.
 - The `web code` folder holds the original course source files provided by the teacher.
 
-Inside each folder there are sections matching the course structure.
+### What this repository contains
+
+- The **`code`** and **`lectures`** folders include my work for **course sections 1 to 3 only** (HTML basics, more HTML, and CSS). They do **not** include a separate Section 4 or Section 5 practice tree.
+- In **`code/section1`**, practice files start at **lecture 4** (lectures 1–3 from the course are not duplicated here).
+- **Section 4** and **Section 5** materials from the teacher appear under **`web code/section4`** and **`web code/section5`** only (for example Section 4 notes as `links.txt` and Section 5 as the full project with `index.html` and `css/`).
+- Teacher files under **`web code/section3`** use a nested folder named **`section2`** (this is how the course bundle is organized here, not a mistake in this README).
+
+Inside each top-level folder, sections follow the course topics where present:
 
 - Section 1 covers HTML basics.
 - Section 2 covers more HTML features.
 - Section 3 covers CSS.
-- Section 4 covers deploying websites online.
-- Section 5 covers a full CSS project.
+- Section 4 covers deploying websites online (in **`web code`** only).
+- Section 5 covers a full CSS project (in **`web code`** only).
 
 ## Course Topics
 
-The course has five sections with 55 lectures totalling 8 hours and 55 minutes.
+On Udemy, the course has five sections with **55 lectures** totalling 8 hours and 55 minutes. The topic list below describes the **full course**; my saved practice in **`code`** and **`lectures`** follows the same topics for Sections 1–3 only, as explained above.
 
 ### Section 1. Introduction (6 lectures, 40 min)
 

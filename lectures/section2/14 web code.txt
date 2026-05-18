@@ -1,5 +1,7 @@
-
-
+================================================================================
+المحاضرة 14 — كيانات HTML (entities) و nbsp
+المجلد: code/section2/web site 14/index.html
+================================================================================
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,6 +14,5 @@
     &lt;div&gt; hello world &lt;/div&gt;
     <br /><br /><br /><br />
     <h1>hello &nbsp; &nbsp; &nbsp; &nbsp;world</h1>
-    
   </body>
 </html>

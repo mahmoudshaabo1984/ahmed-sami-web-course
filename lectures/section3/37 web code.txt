@@ -1,6 +1,16 @@
+================================================================================
+المحاضرة 37 — float و overflow و clear
+المجلد: code/section3/web site 37/
+================================================================================
 
-الكود الأول 
-html
+نفس هيكل index.html يُعاد استخدامه في الخطوات الثلاث؛ يتغيّر style.css فقط (أو أضف div.cp في الخطوة الثالثة).
+
+--------------------------------------------------------------------------------
+الخطوة 1 — float فقط (قد يخرج المحتوى عن الحاوية)
+--------------------------------------------------------------------------------
+
+HTML (index.html):
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -21,61 +31,35 @@ html
   </body>
 </html>
 
+CSS (style.css):
 
-
-الكود الأول 
-css
 .container {
-}
-.container h1 {
-  float: right; /* h1 يطفو على اليمين */
-}
-
-
-
-الكود الثاني 
-html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Float and Overflow Lesson</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <h1>heading1</h1>
-      <h2>heading2</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam,
-        blanditiis!
-      </p>
-    </div>
-  </body>
-</html>
-
-
-
-
-
-
-
-الكود الثاني 
-css 
-.container {
-  overflow: hidden; /* الحاوية تحتوي العناصر الطائرة تلقائياً */
 }
 
 .container h1 {
-  float: right; /* h1 يطفو على اليمين */
+  float: right;
 }
 
+--------------------------------------------------------------------------------
+الخطوة 2 — إضافة overflow: hidden للحاوية (نفس HTML أعلاه)
+--------------------------------------------------------------------------------
 
+CSS (style.css):
 
+.container {
+  overflow: hidden;
+}
 
-الكود الثالث والأخير الصحيح 
-html
+.container h1 {
+  float: right;
+}
+
+--------------------------------------------------------------------------------
+الخطوة 3 — استخدام clear: both (أضف <div class="cp"></div> قبل إغلاق .container)
+--------------------------------------------------------------------------------
+
+HTML (index.html):
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -97,30 +81,14 @@ html
   </body>
 </html>
 
-الكود الثالث والأخير الصحيح 
-css
-/* الطريقة الأولى: أضف هذا لـ .container بدلاً من .cp
-   overflow: hidden;
-*/
+CSS (style.css):
 
-/* h1 يطفو على اليمين */
+/* بديل: يمكن استخدام overflow: hidden; على .container بدلاً من .cp */
+
 .container h1 {
   float: right;
 }
 
-/* الطريقة الثانية: يوقف تأثير float */
 .cp {
   clear: both;
 }
-
-
-
-
-
-
-
-
-
-
-
-
