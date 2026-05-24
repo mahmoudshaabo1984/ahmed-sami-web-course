@@ -3,3 +3,9 @@ Thumbs.db
 desktop.ini
 *.swp
 *~
+
+# Local-only editor/agent settings
+.claude/
+
+# Local backup of older code copies — do not publish
+اكواد قديمة/

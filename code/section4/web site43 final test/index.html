@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- SEO Meta Tags - شرح المحاضرة 43: ميتا تاجز للسيو -->
+    <meta
+      name="description"
+      content="Watch Netflix movies & TV shows online or stream right to your smart TV, game console, PC, Mac, mobile, tablet and more."
+    />
+    <meta name="author" content="Ahmed Samy" />
+    <meta
+      name="keywords"
+      content="Netflix, streaming, movies, TV shows, watch online"
+    />
+
+    <title>Netflix Landing Page Clone</title>
+
+    <!-- FontAwesome Icon Library -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+
+    <!-- Linked External CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Pure CSS Tab Radio Controls (مخفية بصرياً لكن يمكن الوصول إليها بلوحة المفاتيح) -->
+    <input
+      type="radio"
+      id="tab-1-input"
+      name="netflix-tabs"
+      checked
+      class="tab-input"
+    />
+    <input
+      type="radio"
+      id="tab-2-input"
+      name="netflix-tabs"
+      class="tab-input"
+    />
+    <input
+      type="radio"
+      id="tab-3-input"
+      name="netflix-tabs"
+      class="tab-input"
+    />
+
+    <!-- start header showcase -->
+    <header class="showcase">
+      <div class="showcase-top">
+        <!-- alt وصفي للشعار كما شرح الأستاذ في درس التوافقية -->
+        <img src="https://i.ibb.co/r5krrdz/logo.png" alt="Netflix Logo" />
+        <a href="#" class="btn btn-rounded">Sign In</a>
+      </div>
+      <div class="showcase-content">
+        <h1>See what's next</h1>
+        <p>Watch anywhere. Cancel Anytime</p>
+        <a href="#" class="btn btn-xl">
+          Watch Free For 30 Days
+          <!-- aria-hidden لإخفاء الأيقونة الزخرفية من قارئ الشاشة -->
+          <i class="fas fa-chevron-right btn-icon" aria-hidden="true"></i>
+        </a>
+      </div>
+    </header>
+    <!-- end header showcase -->
+
+    <!-- start tabs section -->
+    <section class="tabs" aria-label="Netflix Features">
+      <div class="container">
+        <div class="tab-list">
+          <!-- Tab 1 - Cancel anytime -->
+          <label for="tab-1-input" id="tab-1-label" class="tab-item tab-border">
+            <i class="fas fa-door-open fa-3x" aria-hidden="true"></i>
+            <span class="hide-sm">Cancel at any time</span>
+          </label>
+
+          <!-- Tab 2 - Watch anywhere -->
+          <label for="tab-2-input" id="tab-2-label" class="tab-item">
+            <i class="fas fa-tablet-alt fa-3x" aria-hidden="true"></i>
+            <span class="hide-sm">Watch anywhere</span>
+          </label>
+
+          <!-- Tab 3 - Pick your price -->
+          <label for="tab-3-input" id="tab-3-label" class="tab-item">
+            <i class="fas fa-tags fa-3x" aria-hidden="true"></i>
+            <span class="hide-sm">Pick your price</span>
+          </label>
+        </div>
+      </div>
+    </section>
+    <!-- end tabs section -->
+
+    <!-- start tab content -->
+    <main class="tab-content">
+      <div class="container">
+        <!-- Tab Content 1 -->
+        <div id="tab-1-content" class="tab-content-item">
+          <div class="tab-1-content-inner">
+            <div>
+              <!-- h2 للعنوان الفرعي كما شرح الأستاذ في درس الوسوم الدلالية -->
+              <h2>Cancel your subscription online anytime.</h2>
+              <p class="text-md text-dark">
+                If you decide Netflix isn't for you - no problem. No commitment.
+                Cancel online anytime.
+              </p>
+              <a href="#" class="btn btn-lg">Watch Free For 30 Days</a>
+            </div>
+            <!-- alt وصف تفصيلي دقيق للصورة كما شرح الأستاذ -->
+            <img
+              src="https://i.ibb.co/J2xDJV7/tab-content-1.png"
+              alt="Smart TV, tablet and mobile phone displaying Netflix dashboard with Cancel Membership button"
+            />
+          </div>
+        </div>
+
+        <!-- Tab Content 2 -->
+        <div id="tab-2-content" class="tab-content-item">
+          <div class="tab-2-content-top">
+            <h2>
+              Watch TV shows and movies anytime, anywhere &mdash; personalized
+              for you.
+            </h2>
+            <a href="#" class="btn btn-lg">Watch Free For 30 Days</a>
+          </div>
+          <div class="tab-2-content-bottom">
+            <div>
+              <img
+                src="https://i.ibb.co/DpdN7Gn/tab-content-2-1.png"
+                alt="A smart TV showing a Netflix movie scene"
+              />
+              <h3>Watch on your TV</h3>
+              <p class="text-dark">
+                Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray
+                players and more.
+              </p>
+            </div>
+            <div>
+              <img
+                src="https://i.ibb.co/R3r1SPX/tab-content-2-2.png"
+                alt="A tablet and phone showing Netflix app"
+              />
+              <h3>Watch instantly or download for later</h3>
+              <p class="text-dark">
+                Available on phone or tablet, wherever you go.
+              </p>
+            </div>
+            <div>
+              <img
+                src="https://i.ibb.co/gDhnwWn/tab-content-2-3.png"
+                alt="A laptop displaying the Netflix movie catalog"
+              />
+              <h3>Use any computer</h3>
+              <p class="text-dark">Watch right on Netflix.com.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab Content 3 -->
+        <div id="tab-3-content" class="tab-content-item">
+          <div class="text-center">
+            <h2>Choose one plan and watch everything on Netflix.</h2>
+            <a href="#" class="btn btn-lg">Watch Free For 30 Days</a>
+          </div>
+
+          <!-- جدول مقارنة الخطط مع aria-label للتوافقية -->
+          <table
+            class="table"
+            aria-label="Netflix Subscription Plans Comparison"
+          >
+            <thead>
+              <tr>
+                <th scope="col">Plan Details</th>
+                <th scope="col">Basic</th>
+                <th scope="col">Standard</th>
+                <th scope="col">Premium</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Monthly price after free month ends</td>
+                <td data-label="Basic">$8.99</td>
+                <td data-label="Standard">$12.99</td>
+                <td data-label="Premium">$15.99</td>
+              </tr>
+              <tr>
+                <td>HD Available</td>
+                <td data-label="Basic">
+                  <i class="fas fa-times" aria-hidden="true"></i>
+                  <!-- sr-only نص مخفي بصرياً لقارئات الشاشة -->
+                  <span class="sr-only">Not available in Basic</span>
+                </td>
+                <td data-label="Standard">
+                  <i class="fas fa-check" aria-hidden="true"></i>
+                  <span class="sr-only">Available in Standard</span>
+                </td>
+                <td data-label="Premium">
+                  <i class="fas fa-check" aria-hidden="true"></i>
+                  <span class="sr-only">Available in Premium</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Ultra HD Available</td>
+                <td data-label="Basic">
+                  <i class="fas fa-times" aria-hidden="true"></i>
+                  <span class="sr-only">Not available in Basic</span>
+                </td>
+                <td data-label="Standard">
+                  <i class="fas fa-times" aria-hidden="true"></i>
+                  <span class="sr-only">Not available in Standard</span>
+                </td>
+                <td data-label="Premium">
+                  <i class="fas fa-check" aria-hidden="true"></i>
+                  <span class="sr-only">Available in Premium</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Screens you can watch on at the same time</td>
+                <td data-label="Basic">1</td>
+                <td data-label="Standard">2</td>
+                <td data-label="Premium">4</td>
+              </tr>
+              <tr>
+                <td>Watch on your laptop, TV, phone and tablet</td>
+                <td data-label="Basic">
+                  <i class="fas fa-check" aria-hidden="true"></i>
+                  <span class="sr-only">Available in Basic</span>
+                </td>
+                <td data-label="Standard">
+                  <i class="fas fa-check" aria-hidden="true"></i>
+                  <span class="sr-only">Available in Standard</span>
+                </td>
+                <td data-label="Premium">
+                  <i class="fas fa-check" aria-hidden="true"></i>
+                  <span class="sr-only">Available in Premium</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Unlimited movies and TV shows</td>
+                <td data-label="Basic">
+                  <i class="fas fa-check" aria-hidden="true"></i>
+                  <span class="sr-only">Available in Basic</span>
+                </td>
+                <td data-label="Standard">
+                  <i class="fas fa-check" aria-hidden="true"></i>
+                  <span class="sr-only">Available in Standard</span>
+                </td>
+                <td data-label="Premium">
+                  <i class="fas fa-check" aria-hidden="true"></i>
+                  <span class="sr-only">Available in Premium</span>
+                </td>
+              </tr>
+              <tr>
+                <td>First month free</td>
+                <td data-label="Basic">
+                  <i class="fas fa-check" aria-hidden="true"></i>
+                  <span class="sr-only">Available in Basic</span>
+                </td>
+                <td data-label="Standard">
+                  <i class="fas fa-check" aria-hidden="true"></i>
+                  <span class="sr-only">Available in Standard</span>
+                </td>
+                <td data-label="Premium">
+                  <i class="fas fa-check" aria-hidden="true"></i>
+                  <span class="sr-only">Available in Premium</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+    <!-- end tab content -->
+
+    <!-- start footer -->
+    <footer class="footer">
+      <p>Questions? Call <a href="tel:1-866-579-7172">1-866-579-7172</a></p>
+      <div class="footer-cols">
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Investor Relations</a></li>
+          <li><a href="#">Ways To Watch</a></li>
+          <li><a href="#">Corporate Information</a></li>
+          <li><a href="#">Netflix Originals</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">Terms Of Use</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Account</a></li>
+          <li><a href="#">Redeem Gift Cards</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Speed Test</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Media Center</a></li>
+          <li><a href="#">Buy Gift Cards</a></li>
+          <li><a href="#">Cookie Preferences</a></li>
+          <li><a href="#">Legal Notices</a></li>
+        </ul>
+      </div>
+    </footer>
+    <!-- end footer -->
+  </body>
+</html>

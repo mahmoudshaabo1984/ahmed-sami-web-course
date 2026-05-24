@@ -1,0 +1,436 @@
+/* ============================================================ */
+/* global styles - الأنماط العامة لكل الصفحة                   */
+/* ============================================================ */
+
+* {
+  margin: 0; /* إزالة الهوامش الافتراضية من جميع العناصر */
+  padding: 0; /* إزالة الحشو الافتراضي من جميع العناصر */
+  box-sizing: border-box; /* يجعل الأبعاد تشمل الحشو والإطار */
+}
+
+body {
+  font-family: "PT Sans", Arial, sans-serif; /* خط الصفحة الأساسي */
+  color: #333; /* لون النص الافتراضي رمادي داكن */
+}
+
+a {
+  text-decoration: none; /* إزالة التسطير من جميع الروابط */
+  color: inherit; /* يرث لون النص من العنصر الأب */
+}
+
+ul {
+  list-style: none; /* إزالة النقاط من جميع قوائم ul */
+}
+
+/* end global styles */
+
+/* ============================================================ */
+/* helper classes - فئات مساعدة تُستخدم في أكثر من مكان        */
+/* ============================================================ */
+
+.container {
+  max-width: 1200px; /* أقصى عرض للمحتوى */
+  margin: 0 auto; /* توسيط الحاوية أفقياً */
+  padding: 0 30px; /* حشو أفقي من الجانبين */
+}
+
+.flex-row {
+  display: flex; /* يجعل العناصر الأبناء تصطف في صف */
+  align-items: center; /* توسيط عمودي بين العمودين */
+  gap: 60px; /* مسافة بين العمودين */
+}
+
+.flex-row.reverse {
+  flex-direction: row-reverse; /* يعكس ترتيب العمودين: نص يسار، صورة يمين */
+}
+
+.section-label {
+  font-size: 14px; /* حجم صغير للتسمية العلوية */
+  color: #6e6e73; /* لون رمادي للتسمية */
+  text-transform: uppercase; /* تحويل الحروف إلى كبيرة */
+  letter-spacing: 2px; /* مسافة واسعة بين الحروف */
+  margin-bottom: 15px; /* مسافة تحت التسمية */
+}
+
+/* end helper classes */
+
+/* ============================================================ */
+/* start navigation - شريط التنقل العلوي                        */
+/* ============================================================ */
+
+nav {
+  background-color: #1a1a1a; /* خلفية سوداء داكنة للشريط */
+  display: flex; /* يجعل الشعار والروابط في صف واحد */
+  align-items: center; /* توسيط العناصر عمودياً */
+  justify-content: space-between; /* الشعار يسار، الروابط يمين */
+  padding: 0 30px; /* حشو أفقي */
+  height: 44px; /* ارتفاع ثابت للشريط */
+  position: sticky; /* يلتصق بالأعلى عند التمرير */
+  top: 0; /* المسافة من أعلى الصفحة */
+  z-index: 100; /* يظهر فوق باقي العناصر */
+}
+
+nav .brand {
+  color: #f5f5f7; /* لون أبيض للشعار */
+  font-size: 18px; /* حجم خط الشعار */
+  font-weight: bold; /* خط سميك للشعار */
+}
+
+nav ul {
+  display: flex; /* الروابط في صف أفقي */
+  gap: 30px; /* مسافة بين كل رابط */
+}
+
+nav ul li a {
+  color: #f5f5f7; /* لون أبيض للروابط */
+  font-size: 13px; /* حجم صغير للروابط */
+  transition: color 0.2s; /* انتقال سلس لتغيير اللون */
+}
+
+nav ul li a:hover {
+  color: #0071e3; /* لون أزرق عند التحويم */
+}
+
+/* end navigation */
+
+/* ============================================================ */
+/* start showcase - قسم البطل الرئيسي (Hero Section)            */
+/* ============================================================ */
+
+#showcase {
+  background: linear-gradient(
+    135deg,
+    #0a0a1a 0%,
+    #1a0a2e 30%,
+    #0d1a3a 60%,
+    #1a0505 100%
+  ); /* تدرج لوني داكن يحاكي الصورة الأصلية */
+  height: 100vh; /* ارتفاع يملأ الشاشة بالكامل */
+  display: flex; /* لتوسيط المحتوى */
+  align-items: center; /* توسيط عمودي */
+  justify-content: center; /* توسيط أفقي */
+}
+
+.section-main {
+  text-align: center; /* توسيط النص */
+  padding: 40px 20px; /* حشو داخلي */
+}
+
+.section-main h1 {
+  color: #ffffff; /* لون أبيض للعنوان الرئيسي */
+  font-size: 80px; /* حجم ضخم للعنوان */
+  font-weight: 700; /* خط سميك جداً */
+  letter-spacing: -2px; /* تقليل المسافة بين الحروف */
+  margin-bottom: 20px; /* مسافة تحت العنوان */
+}
+
+.section-main h2 {
+  color: #ffffff; /* لون أبيض للعنوان الثانوي */
+  font-size: 32px; /* حجم متوسط */
+  font-weight: 400; /* خط عادي غير سميك */
+  margin-bottom: 25px; /* مسافة تحت العنوان الثانوي */
+  line-height: 1.3; /* ارتفاع السطر */
+}
+
+.section-main p {
+  color: #d1d1d6; /* لون رمادي فاتح للفقرة */
+  font-size: 17px; /* حجم خط الفقرة */
+  line-height: 1.6; /* ارتفاع السطر لسهولة القراءة */
+  max-width: 680px; /* أقصى عرض للفقرة */
+  margin: 0 auto; /* توسيط الفقرة */
+}
+
+/* end showcase */
+
+/* ============================================================ */
+/* start music section - قسم الموسيقى                           */
+/* ============================================================ */
+
+.music-section {
+  background-color: #000000; /* خلفية سوداء */
+  color: #f5f5f7; /* نص أبيض */
+  padding: 80px 0; /* حشو علوي وسفلي */
+}
+
+.music-section .text-content {
+  flex: 1; /* يأخذ نصف المساحة */
+}
+
+.music-section h2 {
+  font-size: 48px; /* حجم كبير للعنوان */
+  font-weight: 700; /* خط سميك */
+  margin-bottom: 15px; /* مسافة تحت العنوان */
+  line-height: 1.1; /* ارتفاع السطر */
+}
+
+.music-section p {
+  font-size: 17px; /* حجم خط الفقرة */
+  color: #a1a1a6; /* لون رمادي فاتح */
+  line-height: 1.6; /* ارتفاع السطر */
+  max-width: 450px; /* أقصى عرض للفقرة */
+}
+
+/* تصميم محاكاة الهاتف */
+.phone-mockup {
+  flex: 1; /* يأخذ نصف المساحة */
+  display: flex; /* لتوسيط الهاتف */
+  justify-content: center; /* توسيط أفقي */
+}
+
+.phone {
+  width: 200px; /* عرض الهاتف */
+  height: 400px; /* ارتفاع الهاتف */
+  background: #1c1c1e; /* لون جسم الهاتف */
+  border-radius: 40px; /* حواف دائرية */
+  border: 6px solid #3a3a3c; /* إطار الهاتف */
+  display: flex; /* لتوسيط الشاشة */
+  align-items: center; /* توسيط عمودي */
+  justify-content: center; /* توسيط أفقي */
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.8); /* ظل الهاتف */
+}
+
+.phone-screen {
+  width: 85%; /* عرض الشاشة بداخل الهاتف */
+  height: 90%; /* ارتفاع الشاشة */
+  background: linear-gradient(180deg, #0a0a1a, #1a0a2e); /* خلفية الشاشة */
+  border-radius: 30px; /* حواف الشاشة */
+  display: flex; /* تخطيط مرن عمودي */
+  flex-direction: column; /* ترتيب عمودي */
+  align-items: center; /* توسيط أفقي */
+  justify-content: center; /* توسيط عمودي */
+  gap: 10px; /* مسافة بين عناصر الشاشة */
+  padding: 15px; /* حشو داخلي */
+}
+
+.music-icon {
+  font-size: 40px; /* حجم أيقونة الموسيقى */
+  color: #ffffff; /* لون أبيض */
+}
+
+.phone-label {
+  color: #ffffff; /* لون أبيض */
+  font-size: 14px; /* حجم الخط */
+  font-weight: bold; /* خط سميك */
+}
+
+.phone-sub {
+  color: #a1a1a6; /* لون رمادي */
+  font-size: 11px; /* حجم صغير */
+  text-align: center; /* توسيط النص */
+}
+
+/* end music section */
+
+/* ============================================================ */
+/* start video section - قسم الفيديو                            */
+/* ============================================================ */
+
+.video-section {
+  background-color: #f5f5f7; /* خلفية رمادية فاتحة */
+  padding: 80px 0; /* حشو علوي وسفلي */
+}
+
+.video-section .text-content {
+  flex: 1; /* يأخذ نصف المساحة */
+}
+
+.video-section h2 {
+  font-size: 48px; /* حجم كبير للعنوان */
+  font-weight: 700; /* خط سميك */
+  color: #1d1d1f; /* لون داكن */
+  margin-bottom: 15px; /* مسافة تحت العنوان */
+  line-height: 1.1; /* ارتفاع السطر */
+}
+
+.video-section p {
+  font-size: 17px; /* حجم خط الفقرة */
+  color: #515154; /* لون رمادي */
+  line-height: 1.6; /* ارتفاع السطر */
+  max-width: 450px; /* أقصى عرض للفقرة */
+}
+
+/* تصميم محاكاة شاشة التلفاز */
+.tv-mockup {
+  flex: 1; /* يأخذ نصف المساحة */
+  display: flex; /* لتوسيط الشاشة */
+  justify-content: center; /* توسيط أفقي */
+}
+
+.tv-screen {
+  width: 350px; /* عرض التلفاز */
+  height: 220px; /* ارتفاع التلفاز */
+  background: #1c1c1e; /* لون داكن */
+  border-radius: 10px; /* حواف دائرية */
+  border: 8px solid #3a3a3c; /* إطار التلفاز */
+  display: flex; /* لتوسيط المحتوى */
+  flex-direction: column; /* ترتيب عمودي */
+  align-items: center; /* توسيط أفقي */
+  justify-content: center; /* توسيط عمودي */
+  gap: 8px; /* مسافة بين العناصر */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* ظل الشاشة */
+}
+
+.tv-icon {
+  font-size: 36px; /* حجم أيقونة التشغيل */
+  color: #0071e3; /* لون أزرق */
+}
+
+.tv-label {
+  font-size: 14px; /* حجم الخط */
+  color: #a1a1a6; /* لون رمادي */
+}
+
+/* end video section */
+
+/* ============================================================ */
+/* start gift cards section - قسم بطاقات الهدايا                */
+/* ============================================================ */
+
+.gift-section {
+  background-color: #ffffff; /* خلفية بيضاء */
+  padding: 80px 0; /* حشو علوي وسفلي */
+  border-top: 1px solid #e5e5e7; /* خط فاصل علوي رفيع */
+}
+
+.gift-image {
+  flex: 1; /* يأخذ نصف المساحة */
+  display: flex; /* لتوسيط البطاقة */
+  justify-content: center; /* توسيط أفقي */
+}
+
+/* تصميم بطاقة الهدية */
+.gift-card {
+  width: 280px; /* عرض بطاقة الهدية */
+  height: 180px; /* ارتفاع بطاقة الهدية */
+  background: linear-gradient(135deg, #1c1c1e, #3a3a3c); /* تدرج داكن */
+  border-radius: 15px; /* حواف دائرية */
+  display: flex; /* لتوسيط النص */
+  align-items: center; /* توسيط عمودي */
+  justify-content: center; /* توسيط أفقي */
+  color: #f5c518; /* لون ذهبي للنص */
+  font-size: 22px; /* حجم الخط */
+  font-weight: bold; /* خط سميك */
+  transform: rotate(-8deg); /* إمالة طفيفة للبطاقة */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); /* ظل البطاقة */
+}
+
+.gift-text {
+  flex: 1; /* يأخذ نصف المساحة */
+}
+
+.gift-text h2 {
+  font-size: 40px; /* حجم العنوان */
+  font-weight: 700; /* خط سميك */
+  color: #1d1d1f; /* لون داكن */
+  margin-bottom: 15px; /* مسافة تحت العنوان */
+  line-height: 1.2; /* ارتفاع السطر */
+}
+
+.gift-text p {
+  font-size: 17px; /* حجم الفقرة */
+  color: #515154; /* لون رمادي */
+  line-height: 1.6; /* ارتفاع السطر */
+  margin-bottom: 15px; /* مسافة تحت كل فقرة */
+  max-width: 400px; /* أقصى عرض للفقرة */
+}
+
+.already-have {
+  border-top: 1px solid #e5e5e7; /* خط فاصل علوي */
+  padding-top: 20px; /* حشو علوي */
+  font-size: 15px; /* حجم أصغر للنص */
+}
+
+.redeem-link {
+  color: #0071e3; /* لون أزرق للرابط */
+  font-size: 17px; /* حجم الخط */
+  display: flex; /* لتوسيط السهم مع النص */
+  align-items: center; /* توسيط عمودي */
+  gap: 5px; /* مسافة بين السهم والنص */
+  transition: gap 0.2s; /* تأثير انتقال سلس */
+}
+
+.redeem-link:hover {
+  gap: 12px; /* توسيع المسافة عند التحويم */
+}
+
+/* end gift cards section */
+
+/* ============================================================ */
+/* start footer - الفوتر                                        */
+/* ============================================================ */
+
+footer {
+  background-color: #1d1d1f; /* خلفية داكنة للفوتر */
+  color: #a1a1a6; /* لون النص رمادي فاتح */
+  padding: 60px 0 30px; /* حشو علوي أكبر وسفلي أصغر */
+}
+
+.footer-columns {
+  display: grid; /* تخطيط الشبكة للأعمدة الأربعة */
+  grid-template-columns: repeat(4, 1fr); /* أربعة أعمدة متساوية العرض */
+  gap: 40px; /* مسافة بين الأعمدة */
+  padding-bottom: 40px; /* حشو سفلي قبل خط الفصل */
+  border-bottom: 1px solid #3a3a3c; /* خط فاصل سفلي بين الأعمدة والحقوق */
+  margin-bottom: 30px; /* مسافة بين الأعمدة وحقوق النشر */
+}
+
+.footer-col h3 {
+  font-size: 13px; /* حجم صغير لعنوان العمود */
+  color: #f5f5f7; /* لون أبيض لعنوان كل عمود */
+  margin-bottom: 15px; /* مسافة تحت العنوان */
+  font-weight: 600; /* خط نصف سميك */
+}
+
+.footer-col ul {
+  display: flex; /* تخطيط مرن للقائمة */
+  flex-direction: column; /* ترتيب عمودي للروابط */
+  gap: 10px; /* مسافة بين كل رابط */
+}
+
+.footer-col ul li a {
+  color: #a1a1a6; /* لون رمادي للروابط */
+  font-size: 13px; /* حجم صغير للروابط */
+  transition: color 0.2s; /* انتقال سلس لتغيير اللون */
+}
+
+.footer-col ul li a:hover {
+  color: #f5f5f7; /* يصبح أبيض عند التحويم */
+}
+
+.footer-bottom {
+  text-align: center; /* توسيط نص حقوق النشر */
+  font-size: 13px; /* حجم صغير */
+  color: #6e6e73; /* لون رمادي أغمق */
+}
+
+/* end footer */
+
+/* ============================================================ */
+/* start media queries - استعلامات الوسائط للهواتف             */
+/* تجعل الموقع متجاوباً مع الشاشات الصغيرة                     */
+/* ============================================================ */
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none; /* إخفاء روابط التنقل في الهاتف */
+  }
+
+  .section-main h1 {
+    font-size: 48px; /* تصغير العنوان الرئيسي في الهاتف */
+  }
+
+  .section-main h2 {
+    font-size: 22px; /* تصغير العنوان الثانوي */
+  }
+
+  .flex-row,
+  .flex-row.reverse {
+    flex-direction: column; /* ترتيب عمودي في الهاتف */
+  }
+
+  .footer-columns {
+    grid-template-columns: repeat(2, 1fr); /* عمودان فقط في الهاتف */
+  }
+}
+
+/* end media queries */
